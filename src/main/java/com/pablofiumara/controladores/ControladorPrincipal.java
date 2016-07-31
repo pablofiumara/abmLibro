@@ -31,4 +31,9 @@ public class ControladorPrincipal {
      model.addAttribute("listaDeLibros", lista);
      return "mostrarlibros";
  }
+
+ @RequestMapping({ "/libros/agregar" })
+ public String agregarLibros(Model model) {
+     return "agregarLibro";
+ }
 }

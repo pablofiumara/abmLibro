@@ -10,6 +10,7 @@
       <div align="center">
           <h1>Pagina principal</h1>
            <a href="/abmLibro/libros/mostrar">Mostrar libros</a>
+           <a href="/abmLibro/libros/agregar">Agregar libro</a>
       </div>
   </body>
 </html>
