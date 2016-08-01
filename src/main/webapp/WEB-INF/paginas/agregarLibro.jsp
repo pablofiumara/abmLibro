@@ -1,14 +1,22 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-
-
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Agregá un libro</title>
-</head>
-<body>
-<p>Página para agregar un libro</p>
-
-</body>
+    <head>
+    </head>
+    <body>
+        <form:form method="POST" action="/abmLibro/libroAgregado" modelAttribute="libro">
+             <table>
+                <tr>
+                    <td><form:label path="titulo">Titulo</form:label></td>
+                    <td><form:input path="titulo"/></td>
+                </tr>
+                <tr>
+                    <td><form:label path="Id">Id</form:label></td>
+                    <td><form:input path="Id"/></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Submit"/></td>
+                </tr>
+            </table>
+        </form:form>
+    </body>
 </html>
