@@ -49,7 +49,7 @@ public class ControladorPrincipal {
          return "error";
      }
 
-     this.LibroDAO.agregarLibro("un nuevo libro");
+     this.LibroDAO.agregarLibro(libro.getTitulo());
      modelo.addAttribute("titulo", libro.getTitulo());
      return "libroAgregado";
  }
