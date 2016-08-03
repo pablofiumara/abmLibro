@@ -2,7 +2,7 @@ package com.pablofiumara.dao;
 
 import java.util.List;
 
-import com.pablofiumara.entity.Libro;
+import com.pablofiumara.modelo.Libro;
 
 public interface LibroDAO {
 

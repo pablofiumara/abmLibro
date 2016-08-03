@@ -8,7 +8,7 @@ import org.hibernate.SessionFactory;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.pablofiumara.dao.LibroDAO;
-import com.pablofiumara.entity.Libro;
+import com.pablofiumara.modelo.Libro;
 
 @Transactional
 public class LibroDAOImpl implements LibroDAO {

@@ -1,4 +1,4 @@
-package com.pablofiumara.entity;
+package com.pablofiumara.modelo;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

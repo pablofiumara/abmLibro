@@ -19,7 +19,7 @@
 
       <property name="annotatedClasses">
           <list>
-              <value>com.pablofiumara.entity.Libro</value>
+              <value>com.pablofiumara.modelo.Libro</value>
           </list>
       </property>
 

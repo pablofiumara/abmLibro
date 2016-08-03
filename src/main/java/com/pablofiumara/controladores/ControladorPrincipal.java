@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.pablofiumara.dao.LibroDAO;
-import com.pablofiumara.entity.Libro;
+import com.pablofiumara.modelo.Libro;
 
 @Controller
 public class ControladorPrincipal {
