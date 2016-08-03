@@ -1,9 +1,11 @@
 <html>
 <body>
-<h2>Pagina de prueba</h2>
-<a href="/abmLibro/home">Página principal</a>
-<br >
+<h2>Bienvenido</h2>
+
+
 <br >
 <a href="/abmLibro/libros/mostrar">Lista de libros</a>
+<br >
+<a href="/abmLibro/libros/agregar">Agregar libro</a>
 </body>
 </html>
