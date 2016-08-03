@@ -13,8 +13,10 @@
 		</tr>
 	</table>
 	<br>
-	<a href="/abmLibro/libros/mostrar">Lista de libros</a>
+
+	<p><a href="${pageContext.request.contextPath}/libros/mostrar.html">Lista de libros</a></p>
 	<br>
-	<a href="/abmLibro/libros/agregar">Agregar libro</a>
+	<p><a href="${pageContext.request.contextPath}/libros/agregar">Agregar un libro</a></p>
+	<%-- <a href="/abmLibro/libros/agregar">Agregar libro</a>  --%>
 </body>
 </html>
