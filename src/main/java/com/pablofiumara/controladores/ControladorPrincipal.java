@@ -22,7 +22,7 @@ public class ControladorPrincipal {
 
  @RequestMapping(value="/list")
 	public ModelAndView listOfTeams() {
-		ModelAndView modelAndView = new ModelAndView("list-of-teams");
+		ModelAndView modelAndView = new ModelAndView("listaDeLibros");
 
 		List<Libro> teams = libroServicio.getTeams();
 		modelAndView.addObject("teams", teams);
