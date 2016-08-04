@@ -20,7 +20,7 @@ public class ControladorPrincipal {
  @Autowired
  private LibroServicio libroServicio;
 
- @RequestMapping(value="/list")
+ @RequestMapping(value="/mostrarLibros")
 	public ModelAndView listOfTeams() {
 		ModelAndView modelAndView = new ModelAndView("listaDeLibros");
 
