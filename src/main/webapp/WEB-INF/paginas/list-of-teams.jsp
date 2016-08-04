@@ -20,7 +20,7 @@
 <tbody>
 <c:forEach var="team" items="${teams}">
 <tr>
-	<td>${team.Id}</td>
+	<td>${team.id}</td>
 	<td>${team.titulo}</td>
 
 	<td>
