@@ -36,7 +36,8 @@ public class LibroServicioImpl implements LibroServicio {
 	public List<Libro> listarLibros() {
 		return libroDAO.listarLibros();
 	}
-	
+
+	@Transactional
 	public List<Libro> getTeams() {
 		return libroDAO.getTeams();
 	}

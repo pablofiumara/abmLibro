@@ -18,12 +18,15 @@ import com.pablofiumara.modelo.Libro;
 public class LibroDAOImpl implements LibroDAO {
 
 	@Autowired
+
 	private SessionFactory sessionFactory;
 
+	@Transactional
 	private Session getCurrentSession() {
 		return sessionFactory.getCurrentSession();
 	}
 
+	@Transactional
 	public void setSessionFactory(SessionFactory sessionFactory) {
 		this.sessionFactory = sessionFactory;
 	}
