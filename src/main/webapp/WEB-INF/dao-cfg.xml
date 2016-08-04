@@ -5,7 +5,7 @@
  http://www.springframework.org/schema/beans/spring-beans-4.1.xsd">
 
 
- <bean id="libroDAO" class="com.pablofiumara.dao.impl.LibroDAOImpl">
+ <bean id="libroDAO" class="com.pablofiumara.dao.LibroDAOImpl">
      <property name="sessionFactory" ref="miSessionFactory" />
  </bean>
 
