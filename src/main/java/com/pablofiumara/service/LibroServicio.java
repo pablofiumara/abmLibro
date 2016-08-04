@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.pablofiumara.modelo.Libro;
 
+
 public interface LibroServicio {
 
 	public void agregarLibro(Libro unLibro);
@@ -11,5 +12,6 @@ public interface LibroServicio {
 	public Libro buscarLibro(int unId);
 	public void borrarLibro(int unId);
 	public List<Libro> listarLibros();
+	public List<Libro> getTeams();
 
 }
