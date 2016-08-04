@@ -22,10 +22,10 @@ public class LibroDAOImpl implements LibroDAO {
 	private Session getCurrentSession() {
 		return sessionFactory.getCurrentSession();
 	}
-/*
+
 	public void setSessionFactory(SessionFactory sessionFactory) {
 		this.sessionFactory = sessionFactory;
-	}*/
+	}
 
 	@SuppressWarnings("unchecked")
 	public List<Libro> getTeams() {
