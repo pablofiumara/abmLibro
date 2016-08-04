@@ -1,6 +1,7 @@
 package com.pablofiumara.modelo;
 
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -12,23 +13,25 @@ public class Libro {
 
 	@Id
 	@GeneratedValue
-	private Integer Id;
+    @Column(name="id")
+	private int id;
 
+    @Column(name="titulo")
 	private String titulo;
 
-	public Integer getId() {
-		return Id;
+
+	public int getId() {
+		return id;
 	}
 	public void setId(Integer id) {
-		this.Id = id;
+		this.id = id;
 	}
 	public String getTitulo() {
 		return titulo;
 	}
-	public void setTitulo(String titulo) {
-		this.titulo = titulo;
+	public void setTitulo(String name) {
+		this.titulo = name;
 	}
-
 
 
 }
