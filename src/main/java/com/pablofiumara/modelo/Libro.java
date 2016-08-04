@@ -9,10 +9,13 @@ import javax.persistence.Table;
 @Table(name = "Libros")
 public class Libro {
 
+
+	private String titulo; //este atributo puede estar escrito primero y no ser el 'primary key'
+
 	@Id
 	@GeneratedValue
 	private int id;
-	private String titulo;
+
 
 
 	public int getId() {
