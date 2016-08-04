@@ -15,27 +15,30 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.pablofiumara.dao.LibroDAO;
 import com.pablofiumara.modelo.Libro;
+import com.pablofiumara.service.LibroServicio; //importo la interfaz
 
 @Controller
 public class ControladorPrincipal {
 
  @Autowired
- private LibroDAO LibroDAO;
+ private LibroServicio libroServicio;
+
+ @RequestMapping(value="/list")
+	public ModelAndView listOfTeams() {
+		ModelAndView modelAndView = new ModelAndView("list-of-teams");
+
+		List<Libro> teams = libroServicio.getTeams();
+		modelAndView.addObject("teams", teams);
+
+		return modelAndView;
+	}
 
  @RequestMapping({ "/", "/home" })
  public String home(Model model) {
      return "index";
  }
 
- @RequestMapping({ "/libros/mostrar" })
- public String mostrarLibros(Model model) {
-     LibroDAO.agregarLibro("titulo del libro");
 
-     List<Libro> lista = LibroDAO.mostrarLosLibros();
-
-     model.addAttribute("listaDeLibros", lista);
-     return "mostrarlibros";
- }
 
  @RequestMapping(value = "/libros/agregar", method = RequestMethod.GET)
 	public ModelAndView mostrarFormulario() {
@@ -43,15 +46,6 @@ public class ControladorPrincipal {
   }
 
 
- @RequestMapping(value = "/libros/agregado", method = RequestMethod.POST)
- public String agregarLibros(@ModelAttribute("libro") final Libro libro, final BindingResult resultado, final ModelMap modelo) {
-     if (resultado.hasErrors()) {
-         return "error";
-     }
 
-     this.LibroDAO.agregarLibro(libro.getTitulo());
-     modelo.addAttribute("titulo", libro.getTitulo());
-     return "libroAgregado";
- }
 
 }
