@@ -16,7 +16,6 @@ import com.pablofiumara.modelo.Libro;
 public class LibroDAOImpl implements LibroDAO {
 
 	@Autowired
-
 	private SessionFactory sessionFactory;
 
 
