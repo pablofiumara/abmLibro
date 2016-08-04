@@ -1,0 +1,6 @@
+com\pablofiumara\controladores\ControladorPrincipal.class
+com\pablofiumara\dao\LibroDAO.class
+com\pablofiumara\dao\impl\LibroDAOImpl.class
+com\pablofiumara\service\LibroServicioImpl.class
+com\pablofiumara\modelo\Libro.class
+com\pablofiumara\service\LibroServicio.class
