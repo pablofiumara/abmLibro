@@ -17,25 +17,6 @@ public class LibroServicioImpl implements LibroServicio {
 	@Autowired
 	private LibroDAO libroDAO;
 
-	public void agregarLibro(Libro unLibro) {
-		libroDAO.agregarLibro(unLibro);
-	}
-
-	public void editarLibro(Libro unLibro) {
-		libroDAO.editarLibro(unLibro);
-	}
-
-	public Libro buscarLibro(int unId) {
-		return libroDAO.buscarLibro(unId);
-	}
-
-	public void borrarLibro(int unId) {
-		libroDAO.borrarLibro(unId);
-	}
-
-	public List<Libro> listarLibros() {
-		return libroDAO.listarLibros();
-	}
 
 	@Transactional
 	public List<Libro> getTeams() {
