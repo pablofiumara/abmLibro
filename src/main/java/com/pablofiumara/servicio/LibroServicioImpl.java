@@ -1,4 +1,4 @@
-package com.pablofiumara.service;
+package com.pablofiumara.servicio;
 
 import java.util.List;
 

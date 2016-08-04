@@ -12,7 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 
 import com.pablofiumara.modelo.Libro;
-import com.pablofiumara.service.LibroServicio; //importo la interfaz
+import com.pablofiumara.servicio.LibroServicio; //importo la interfaz
 
 @Controller
 public class ControladorPrincipal {
