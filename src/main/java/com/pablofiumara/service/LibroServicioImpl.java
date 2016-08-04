@@ -11,7 +11,7 @@ import com.pablofiumara.dao.LibroDAO;
 import com.pablofiumara.modelo.Libro;
 
 @Service
-@Transactional
+
 public class LibroServicioImpl implements LibroServicio {
 
 	@Autowired
