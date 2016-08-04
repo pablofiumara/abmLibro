@@ -30,7 +30,7 @@ public class ControladorPrincipal {
 		return modelAndView;
 	}
 
- @RequestMapping({ "/", "/home" })
+ @RequestMapping(value="/")
  public String home(Model model) {
      return "index";
  }
