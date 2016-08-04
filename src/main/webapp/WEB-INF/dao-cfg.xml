@@ -6,9 +6,7 @@
 
 
 
- <bean id="miLibroDAO" class="com.pablofiumara.dao.impl.LibroDAOImpl">
-     <property name="sessionFactory" ref="miSessionFactory" />
- </bean>
+
 
 
 </beans>
