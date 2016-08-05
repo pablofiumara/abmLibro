@@ -42,7 +42,7 @@ public class ControladorPrincipal {
 	}
 
 	@RequestMapping(value="/add", method=RequestMethod.POST)
-	public ModelAndView addingTeam(@ModelAttribute Libro team) {
+	public ModelAndView agregoLibro(@ModelAttribute Libro team) {
 
 		ModelAndView modelAndView = new ModelAndView("home");
 		libroServicio.addTeam(team);
