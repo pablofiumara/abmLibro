@@ -12,8 +12,14 @@
 
    <import resource="data-source-hiber-cfg.xml"/>
 
-   <tx:annotation-driven proxy-target-class="true" transaction-manager="miTransactionManager"/>
 
+  <!--
+  mi "transaction-manager" se llama "miTransactionManager" y
+  evalua la sesión (relacionado con DAO) llamada "miSessionFactory", que se encuentra el archivo "dao-cfg.xml"
+  de la misma carpeta
+
+   -->
+   <tx:annotation-driven proxy-target-class="true" transaction-manager="miTransactionManager"/>
    <bean id="miTransactionManager"
        class="org.springframework.orm.hibernate4.HibernateTransactionManager">
        <property name="sessionFactory" ref="miSessionFactory"/>
