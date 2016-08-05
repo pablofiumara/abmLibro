@@ -24,7 +24,7 @@ public class LibroServicioImpl implements LibroServicio {
 
 	@Transactional
 	public void agregoLibro(Libro unLibro) {
-		libroDAO.addTeam(unLibro);
+		libroDAO.agregarUnLibro(unLibro);
 	}
 
 }

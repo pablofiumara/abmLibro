@@ -28,7 +28,7 @@ public class LibroDAOImpl implements LibroDAO {
 	}
 
 	@Transactional
-	public void addTeam(Libro unLibro) {
+	public void agregarUnLibro(Libro unLibro) {
 		sessionFactory.getCurrentSession().save(unLibro);
 	}
 
