@@ -35,8 +35,8 @@ public class LibroDAOImpl implements LibroDAO {
 
 	@Transactional
 	public Libro buscarLibro(int id) {
-		Libro team = (Libro) sessionFactory.getCurrentSession().get(Libro.class, id);
-		return team;
+		Libro unLibro = (Libro) sessionFactory.getCurrentSession().get(Libro.class, id);
+		return unLibro;
 	}
 
 
