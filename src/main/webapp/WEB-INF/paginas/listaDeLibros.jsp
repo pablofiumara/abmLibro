@@ -18,10 +18,10 @@
 </tr>
 </thead>
 <tbody>
-<c:forEach var="team" items="${listaLibros}">
+<c:forEach var="unLibro" items="${listaLibros}">
 <tr>
-	<td>${team.id}</td>
-	<td>${team.titulo}</td>
+	<td>${unLibro.id}</td>
+	<td>${unLibro.titulo}</td>
 
 	<td>
 	<a href="${pageContext.request.contextPath}/team/edit/${team.id}.html">Edit</a><br/>
