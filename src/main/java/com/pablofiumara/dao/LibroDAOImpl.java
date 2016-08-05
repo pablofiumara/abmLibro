@@ -34,7 +34,7 @@ public class LibroDAOImpl implements LibroDAO {
 
 
 	@Transactional
-	public Libro getTeam(int id) {
+	public Libro buscarLibro(int id) {
 		Libro team = (Libro) sessionFactory.getCurrentSession().get(Libro.class, id);
 		return team;
 	}
@@ -43,7 +43,7 @@ public class LibroDAOImpl implements LibroDAO {
 
 	@Transactional
 	public void deleteTeam(int id) {
-		Libro libro = getTeam(id);
+		Libro libro = buscarLibro(id);
 		if (libro != null)
 			sessionFactory.getCurrentSession().delete(libro);
 	}
