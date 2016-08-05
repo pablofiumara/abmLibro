@@ -32,4 +32,18 @@ public class LibroDAOImpl implements LibroDAO {
 		sessionFactory.getCurrentSession().save(unLibro);
 	}
 
+	public Libro getTeam(int id) {
+		Libro team = (Libro) sessionFactory.getCurrentSession().get(Libro.class, id);
+		return team;
+	}
+
+
+
+	@Transactional
+	public void deleteTeam(int id) {
+		Libro team = getTeam(id);
+		if (team != null)
+			sessionFactory.getCurrentSession().delete(team);
+	}
+
 }

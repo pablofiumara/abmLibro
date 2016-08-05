@@ -11,5 +11,8 @@ public interface LibroDAO {
 
 	//no es necesario que el nombre de este parámetro sea igual al nombre del parámetro de su implementacion
 	public void agregarUnLibro(Libro libro);
+	public Libro getTeam(int id);
+	public void deleteTeam(int id);
+
 
 }

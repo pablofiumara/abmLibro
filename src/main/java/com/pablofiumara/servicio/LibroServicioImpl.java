@@ -27,4 +27,13 @@ public class LibroServicioImpl implements LibroServicio {
 		libroDAO.agregarUnLibro(unLibro);
 	}
 
+	@Transactional
+	public Libro getTeam(int id) {
+		return libroDAO.getTeam(id);
+	}
+
+	@Transactional
+	public void deleteTeam(int id) {
+		libroDAO.deleteTeam(id);
+	}
 }
