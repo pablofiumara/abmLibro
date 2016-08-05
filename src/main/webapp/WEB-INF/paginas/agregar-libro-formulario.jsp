@@ -14,7 +14,7 @@
 <body>
 <h1>Agregá un libro</h1>
 <p>Completá el formulario para agregar un libro</p>
-<form:form method="POST" commandName="team" action="${pageContext.request.contextPath}/agregarLibro.html">
+<form:form method="POST" commandName="unLibro" action="${pageContext.request.contextPath}/agregarLibro.html">
 <table>
 <tbody>
 	<tr>
