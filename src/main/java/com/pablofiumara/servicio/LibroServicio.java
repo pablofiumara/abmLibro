@@ -9,7 +9,8 @@ public interface LibroServicio {
 
 
 	public List<Libro> buscarLibros();
-	public void addTeam(Libro team);
+	//no es necesario que los parámetros de los métodos de la interfaz y de su implementación se llamen igual
+	public void addTeam(Libro unLibroNuevo);
 
 
 }
