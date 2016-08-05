@@ -14,7 +14,7 @@
 <body>
 <h1>Add team page</h1>
 <p>Here you can add a new team.</p>
-<form:form method="POST" commandName="team" action="${pageContext.request.contextPath}/add.html">
+<form:form method="POST" commandName="team" action="${pageContext.request.contextPath}/agregarLibro.html">
 <table>
 <tbody>
 	<tr>

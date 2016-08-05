@@ -41,7 +41,7 @@ public class ControladorPrincipal {
 		return modelAndView;
 	}
 
-	@RequestMapping(value="/add", method=RequestMethod.POST)
+	@RequestMapping(value="/agregarLibro", method=RequestMethod.POST)
 	public ModelAndView agregoLibro(@ModelAttribute Libro team) {
 
 		ModelAndView modelAndView = new ModelAndView("home");
