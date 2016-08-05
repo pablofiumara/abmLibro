@@ -34,15 +34,4 @@ public class ControladorPrincipal {
  public String home(Model model) {
      return "index";
  }
-
-
-
- @RequestMapping(value = "/libros/agregar", method = RequestMethod.GET)
-	public ModelAndView mostrarFormulario() {
-	    return new ModelAndView("agregarLibro", "libro", new Libro());
-  }
-
-
-
-
 }
