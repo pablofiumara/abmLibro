@@ -21,7 +21,7 @@
 <c:forEach var="unLibro" items="${listaLibros}">
 <tr>
 	<td>${unLibro.id}</td>
-	<td>${unLibro.titulo}</td>
+	<td>${unLibro.titulo}</td> <!--  unLibro.titulo refiere al atributo del modelo Libro -->
 
 	<td>
 	<a href="${pageContext.request.contextPath}/team/edit/${team.id}.html">Edit</a><br/>
