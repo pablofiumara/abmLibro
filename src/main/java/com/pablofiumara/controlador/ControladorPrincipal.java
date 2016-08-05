@@ -35,7 +35,7 @@ public class ControladorPrincipal {
 	}
 
 	@RequestMapping(value="/add", method=RequestMethod.GET)
-	public ModelAndView addTeamPage() {
+	public ModelAndView agregoLibroPagina() {
 		ModelAndView modelAndView = new ModelAndView("add-team-form");
 		modelAndView.addObject("team", new Libro());
 		return modelAndView;
