@@ -28,7 +28,7 @@ public class LibroServicioImpl implements LibroServicio {
 	}
 
 	@Transactional
-	public Libro getTeam(int id) {
+	public Libro buscarUnLibro(int id) {
 		return libroDAO.getTeam(id);
 	}
 
