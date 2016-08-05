@@ -21,7 +21,7 @@ public class ControladorPrincipal {
  private LibroServicio libroServicio;
 
  @RequestMapping(value="/mostrarLibros")
-	public ModelAndView listOfTeams() {
+	public ModelAndView buscarLibros() {
 		ModelAndView modeloYVista = new ModelAndView("listaDeLibros");
 
 		List<Libro> teams = libroServicio.getTeams();
