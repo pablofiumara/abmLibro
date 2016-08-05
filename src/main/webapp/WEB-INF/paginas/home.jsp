@@ -10,7 +10,7 @@
 <body>
 <h1>Libro borrado</h1>
 <p>
-${message}<br/>
+${unMensaje}<br/>
 
 </p>
 </body>

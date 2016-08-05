@@ -59,7 +59,7 @@ public class ControladorPrincipal {
 		ModelAndView modelAndView = new ModelAndView("home");
 		libroServicio.deleteTeam(id);
 		String mensaje = "Team was successfully deleted.";
-		modelAndView.addObject("message", mensaje);
+		modelAndView.addObject("unMensaje", mensaje);
 		return modelAndView;
 	}
 }
