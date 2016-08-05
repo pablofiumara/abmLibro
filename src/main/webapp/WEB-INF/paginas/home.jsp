@@ -12,7 +12,7 @@
 <p>
 ${unMensaje}<br/>
 
-<a href="${pageContext.request.contextPath}/team/list.html">Team list</a><br/>
+<a href="${pageContext.request.contextPath}/mostrarLibros">Lista de libros</a><br/>
 </p>
 </body>
 </html>
