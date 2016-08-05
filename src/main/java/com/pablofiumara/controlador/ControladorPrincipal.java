@@ -58,8 +58,8 @@ public class ControladorPrincipal {
 	public ModelAndView deleteTeam(@PathVariable Integer id) {
 		ModelAndView modelAndView = new ModelAndView("home");
 		libroServicio.deleteTeam(id);
-		String message = "Team was successfully deleted.";
-		modelAndView.addObject("message", message);
+		String mensaje = "Team was successfully deleted.";
+		modelAndView.addObject("message", mensaje);
 		return modelAndView;
 	}
 }
