@@ -19,11 +19,7 @@
 <tbody>
 	<tr>
 		<td>Name:</td>
-		<td><form:input path="name" /></td>
-	</tr>
-	<tr>
-		<td>Rating:</td>
-		<td><form:input path="rating" /></td>
+		<td><form:input path="titulo" /></td>
 	</tr>
 	<tr>
 		<td><input type="submit" value="Add" /></td>
