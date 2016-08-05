@@ -22,12 +22,12 @@ public class ControladorPrincipal {
 
  @RequestMapping(value="/mostrarLibros")
 	public ModelAndView listOfTeams() {
-		ModelAndView modelAndView = new ModelAndView("listaDeLibros");
+		ModelAndView modeloYVista = new ModelAndView("listaDeLibros");
 
 		List<Libro> teams = libroServicio.getTeams();
-		modelAndView.addObject("teams", teams);
+		modeloYVista.addObject("teams", teams);
 
-		return modelAndView;
+		return modeloYVista;
 	}
 
  @RequestMapping(value="/")
