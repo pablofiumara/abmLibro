@@ -58,7 +58,7 @@ public class ControladorPrincipal {
 	public ModelAndView deleteTeam(@PathVariable Integer id) {
 		ModelAndView modeloYVista = new ModelAndView("home");
 		libroServicio.deleteTeam(id);
-		String mensaje = "Team was successfully deleted.";
+		String mensaje = "El libro se ha borrado";
 		modeloYVista.addObject("unMensaje", mensaje);
 		return modeloYVista;
 	}
