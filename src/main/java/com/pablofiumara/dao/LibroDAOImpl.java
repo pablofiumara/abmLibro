@@ -28,8 +28,8 @@ public class LibroDAOImpl implements LibroDAO {
 	}
 
 	@Transactional
-	public void addTeam(Libro team) {
-		sessionFactory.getCurrentSession().save(team);
+	public void addTeam(Libro unLibro) {
+		sessionFactory.getCurrentSession().save(unLibro);
 	}
 
 }
