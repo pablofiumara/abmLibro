@@ -18,11 +18,11 @@
 <table>
 <tbody>
 	<tr>
-		<td>Name:</td>
+		<td>Título del libro:</td>
 		<td><form:input path="titulo" /></td>
 	</tr>
 	<tr>
-		<td><input type="submit" value="Add" /></td>
+		<td><input type="submit" value="Agregar" /></td>
 		<td></td>
 	</tr>
 </tbody>
