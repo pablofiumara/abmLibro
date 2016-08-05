@@ -2,9 +2,8 @@
 <body>
 <h2>Bienvenido</h2>
 
+<a href="${pageContext.request.contextPath}/mostrarLibros.html">Mostrar todos los libros</a><br/>
 
-<br >
-<a href="/abmLibro/mostrarLibros">Lista de libros</a>
 <br >
 
 </body>
