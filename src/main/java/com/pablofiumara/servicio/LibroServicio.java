@@ -9,5 +9,7 @@ public interface LibroServicio {
 
 
 	public List<Libro> buscarLibros();
+	public void addTeam(Libro team);
+
 
 }

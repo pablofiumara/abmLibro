@@ -22,4 +22,8 @@ public class LibroServicioImpl implements LibroServicio {
 		return libroDAO.buscarLosLibros();
 	}
 
+	public void addTeam(Libro team) {
+		libroDAO.addTeam(team);
+	}
+
 }
