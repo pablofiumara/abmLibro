@@ -10,7 +10,7 @@
 <body>
 <h1>Libro ha sido agregado</h1>
 <p>
-${message}<br/>
+${unMensaje}<br/>
 
 <a href="${pageContext.request.contextPath}/team/list.html">Team list</a><br/>
 </p>
