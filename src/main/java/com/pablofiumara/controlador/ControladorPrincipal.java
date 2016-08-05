@@ -36,7 +36,7 @@ public class ControladorPrincipal {
 
 	@RequestMapping(value="/add", method=RequestMethod.GET)
 	public ModelAndView agregoLibroPagina() {
-		ModelAndView modelAndView = new ModelAndView("add-team-form");
+		ModelAndView modelAndView = new ModelAndView("agregar-libro-formulario");
 		modelAndView.addObject("team", new Libro());
 		return modelAndView;
 	}
