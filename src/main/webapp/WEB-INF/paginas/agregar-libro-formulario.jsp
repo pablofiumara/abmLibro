@@ -9,11 +9,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-<title>Add team page</title>
+<title>Página para agregar libro</title>
 </head>
 <body>
-<h1>Add team page</h1>
-<p>Here you can add a new team.</p>
+<h1>Agregá un libro</h1>
+<p>Completá el formulario para agregar un libro</p>
 <form:form method="POST" commandName="team" action="${pageContext.request.contextPath}/agregarLibro.html">
 <table>
 <tbody>
