@@ -15,7 +15,7 @@
 <h1>Agregue un nuevo libro</h1>
 <p>Puede agregar un nuevo libro a la base de datos completando el formulario que se encuentra debajo:</p>
 
-<form:form method="POST" commandName="libroNuevo" action="${pageContext.request.contextPath}/libro/libroagregado.html">
+<form:form method="POST" commandName="libroNuevo" action="${pageContext.request.contextPath}/">
 <table>
 <tbody>
 	<tr>
