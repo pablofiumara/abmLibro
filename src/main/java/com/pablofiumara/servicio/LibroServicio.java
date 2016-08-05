@@ -8,6 +8,6 @@ import com.pablofiumara.modelo.Libro;
 public interface LibroServicio {
 
 
-	public List<Libro> getTeams();
+	public List<Libro> buscarLibros();
 
 }
