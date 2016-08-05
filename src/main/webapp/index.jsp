@@ -2,6 +2,8 @@
 <body>
 <h2>Bienvenido</h2>
 
+${unMensaje}
+
 <a href="${pageContext.request.contextPath}/mostrarLibros.html">Mostrar todos los libros</a><br/>
 <a href="${pageContext.request.contextPath}/agregarlibro">Agregar un nuevo libro</a><br/>
 
