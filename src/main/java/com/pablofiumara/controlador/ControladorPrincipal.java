@@ -57,7 +57,7 @@ public class ControladorPrincipal {
 	@RequestMapping(value="/borrar/{id}", method=RequestMethod.GET)
 	public ModelAndView borrarLibro(@PathVariable Integer id) {
 		ModelAndView modeloYVista = new ModelAndView("home");
-		libroServicio.deleteTeam(id);
+		libroServicio.borrarUnLibro(id);
 		String mensaje = "El libro se ha borrado";
 		modeloYVista.addObject("unMensaje", mensaje);
 		return modeloYVista;
