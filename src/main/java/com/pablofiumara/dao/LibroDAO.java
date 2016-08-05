@@ -7,5 +7,5 @@ import com.pablofiumara.modelo.Libro;
 
 public interface LibroDAO {
 
-  public List<Libro> getTeams();
+  public List<Libro> buscarLosLibros();
 }

@@ -23,7 +23,7 @@ public class LibroDAOImpl implements LibroDAO {
 
 	@SuppressWarnings("unchecked")
 	@Transactional
-	public List<Libro> getTeams() {
+	public List<Libro> buscarLosLibros() {
 		return sessionFactory.getCurrentSession().createQuery("from Libro").list();
 	}
 

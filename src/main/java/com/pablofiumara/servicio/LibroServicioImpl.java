@@ -20,7 +20,7 @@ public class LibroServicioImpl implements LibroServicio {
 
 	@Transactional
 	public List<Libro> buscarLibros() {
-		return libroDAO.getTeams();
+		return libroDAO.buscarLosLibros();
 	}
 
 }
