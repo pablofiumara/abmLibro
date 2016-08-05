@@ -25,7 +25,7 @@ public class ControladorPrincipal {
 		ModelAndView modeloYVista = new ModelAndView("listaDeLibros");
 
 		List<Libro> libros = libroServicio.getTeams();
-		modeloYVista.addObject("teams", libros);
+		modeloYVista.addObject("listaLibros", libros);
 
 		return modeloYVista;
 	}

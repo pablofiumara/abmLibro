@@ -18,7 +18,7 @@
 </tr>
 </thead>
 <tbody>
-<c:forEach var="team" items="${teams}">
+<c:forEach var="team" items="${listaLibros}">
 <tr>
 	<td>${team.id}</td>
 	<td>${team.titulo}</td>
