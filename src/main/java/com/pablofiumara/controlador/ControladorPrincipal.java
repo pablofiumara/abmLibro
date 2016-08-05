@@ -54,7 +54,7 @@ public class ControladorPrincipal {
 		return modelAndView;
 	}
 
-	@RequestMapping(value="/delete/{id}", method=RequestMethod.GET)
+	@RequestMapping(value="/borrar/{id}", method=RequestMethod.GET)
 	public ModelAndView deleteTeam(@PathVariable Integer id) {
 		ModelAndView modeloYVista = new ModelAndView("home");
 		libroServicio.deleteTeam(id);
