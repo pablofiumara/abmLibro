@@ -13,10 +13,8 @@
    <import resource="data-source-hiber-cfg.xml"/>
   <!--
   mi "transaction-manager" se llama "miTransactionManager" y
-  evalua la sesión (relacionado con DAO) llamada "miSessionFactory", que se encuentra el archivo "dao-cfg.xml"
-  de la misma carpeta.
-  miSessionFactory no se importa de manera directa (como sí ocurre con data-source-hiber-cfg.xml) ni de manera indirecta
-  (a través del archivo mencionado) pero se puede referir aquí, dentro de la configuración de las transacciones.
+  evalua la sesión (relacionado con DAO) llamada "miSessionFactory", que se encuentra en "data-source-hiber-cfg.xml"
+  que se importa (misma carpeta).
    -->
    <tx:annotation-driven proxy-target-class="true" transaction-manager="miTransactionManager"/>
    <bean id="miTransactionManager"
