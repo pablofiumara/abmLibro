@@ -8,4 +8,5 @@ import com.pablofiumara.modelo.Libro;
 public interface LibroDAO {
 
   public List<Libro> buscarLosLibros();
+  public void agregarLibro(Libro unLibro);
 }
