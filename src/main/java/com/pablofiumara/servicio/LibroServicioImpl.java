@@ -22,6 +22,7 @@ public class LibroServicioImpl implements LibroServicio {
 		return libroDAO.buscarLosLibros();
 	}
 
+	@Transactional
 	public void addTeam(Libro team) {
 		libroDAO.addTeam(team);
 	}

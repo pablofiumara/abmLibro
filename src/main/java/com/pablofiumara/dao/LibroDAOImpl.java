@@ -27,6 +27,7 @@ public class LibroDAOImpl implements LibroDAO {
 		return sessionFactory.getCurrentSession().createQuery("from Libro").list(); //Libro es el nombre de la clase modelo, no  de la tabla
 	}
 
+	@Transactional
 	public void addTeam(Libro team) {
 		sessionFactory.getCurrentSession().save(team);
 	}
