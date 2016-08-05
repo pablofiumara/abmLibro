@@ -47,8 +47,8 @@ public class ControladorPrincipal {
 		ModelAndView modelAndView = new ModelAndView("home");
 		libroServicio.addTeam(team);
 
-		String message = "Team was successfully added.";
-		modelAndView.addObject("unMensaje", message);
+		String mensaje = "El nuevo libro se ha agregado";
+		modelAndView.addObject("unMensaje", mensaje);
 
 		return modelAndView;
 	}
