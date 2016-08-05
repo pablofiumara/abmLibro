@@ -9,6 +9,8 @@ public interface LibroServicio {
 
 
 	public List<Libro> buscarLibros();
-	public void agregarLibro(Libro unLibro);
+	//no es necesario que los parámetros de los métodos de la interfaz y de su implementación se llamen igual
+	public void agregoLibro(Libro unLibroNuevo);
+
 
 }

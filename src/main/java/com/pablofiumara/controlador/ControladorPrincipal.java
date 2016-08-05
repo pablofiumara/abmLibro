@@ -34,24 +34,22 @@ public class ControladorPrincipal {
 		return "index";
 	}
 
-	@RequestMapping(value="/agregarlibro", method=RequestMethod.GET)
-	public ModelAndView agregarLibroPagina() {
-		ModelAndView modeloYVista = new ModelAndView("agregarLibroFormulario");
-		modeloYVista.addObject("libroNuevo", new Libro());
-		return modeloYVista;
+	@RequestMapping(value="/agregar", method=RequestMethod.GET)
+	public ModelAndView agregoLibroPagina() {
+		ModelAndView modelAndView = new ModelAndView("agregar-libro-formulario");
+		modelAndView.addObject("unLibro", new Libro());
+		return modelAndView;
 	}
 
-	@RequestMapping(value="/libroagregado", method=RequestMethod.POST)
+	@RequestMapping(value="/agregarLibro", method=RequestMethod.POST)
 	public ModelAndView agregoLibro(@ModelAttribute Libro unLibro) {
 
-		ModelAndView modeloYVista = new ModelAndView("index");
-		libroServicio.agregarLibro(unLibro);
+		ModelAndView modelAndView = new ModelAndView("libro-agregado");
+		libroServicio.agregoLibro(unLibro);
 
-		String mensaje = "Un nuevo libro se ha agregado";
-		modeloYVista.addObject("unMensaje", mensaje);
+		String mensaje = "El nuevo libro se ha agregado";
+		modelAndView.addObject("unMensaje", mensaje);
 
-		return modeloYVista;
+		return modelAndView;
 	}
-
-
 }

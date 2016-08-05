@@ -27,10 +27,8 @@ public class LibroDAOImpl implements LibroDAO {
 		return sessionFactory.getCurrentSession().createQuery("from Libro").list(); //Libro es el nombre de la clase modelo, no  de la tabla
 	}
 
-	//agrego libro a la base de datos pero no devuelvo nada porque
-	//el método devuelve void.
-	//cuando se busca a un libro, sí se devuelve algo (un libro)
-	public void agregarLibro(Libro unLibro) {
+	@Transactional
+	public void agregarUnLibro(Libro unLibro) {
 		sessionFactory.getCurrentSession().save(unLibro);
 	}
 
