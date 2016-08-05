@@ -56,10 +56,10 @@ public class ControladorPrincipal {
 
 	@RequestMapping(value="/delete/{id}", method=RequestMethod.GET)
 	public ModelAndView deleteTeam(@PathVariable Integer id) {
-		ModelAndView modelAndView = new ModelAndView("home");
+		ModelAndView modeloYVista = new ModelAndView("home");
 		libroServicio.deleteTeam(id);
 		String mensaje = "Team was successfully deleted.";
-		modelAndView.addObject("unMensaje", mensaje);
-		return modelAndView;
+		modeloYVista.addObject("unMensaje", mensaje);
+		return modeloYVista;
 	}
 }
