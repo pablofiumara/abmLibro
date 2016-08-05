@@ -1,4 +1,4 @@
-package com.pablofiumara.controladores;
+package com.pablofiumara.controlador;
 
 
 import java.util.List;
