@@ -41,9 +41,9 @@ public class LibroDAOImpl implements LibroDAO {
 
 	@Transactional
 	public void deleteTeam(int id) {
-		Libro team = getTeam(id);
-		if (team != null)
-			sessionFactory.getCurrentSession().delete(team);
+		Libro libro = getTeam(id);
+		if (libro != null)
+			sessionFactory.getCurrentSession().delete(libro);
 	}
 
 }
