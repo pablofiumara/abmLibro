@@ -42,10 +42,10 @@ public class ControladorPrincipal {
 	}
 
 	@RequestMapping(value="/agregarLibro", method=RequestMethod.POST)
-	public ModelAndView agregoLibro(@ModelAttribute Libro team) {
+	public ModelAndView agregoLibro(@ModelAttribute Libro unLibro) {
 
 		ModelAndView modelAndView = new ModelAndView("home");
-		libroServicio.addTeam(team);
+		libroServicio.addTeam(unLibro);
 
 		String mensaje = "El nuevo libro se ha agregado";
 		modelAndView.addObject("unMensaje", mensaje);
