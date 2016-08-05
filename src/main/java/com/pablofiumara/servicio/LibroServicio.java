@@ -9,5 +9,6 @@ public interface LibroServicio {
 
 
 	public List<Libro> buscarLibros();
+	public void agregarLibro(Libro unLibro);
 
 }
