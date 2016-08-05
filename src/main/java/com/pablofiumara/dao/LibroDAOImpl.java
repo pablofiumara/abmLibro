@@ -32,6 +32,8 @@ public class LibroDAOImpl implements LibroDAO {
 		sessionFactory.getCurrentSession().save(unLibro);
 	}
 
+
+	@Transactional
 	public Libro getTeam(int id) {
 		Libro team = (Libro) sessionFactory.getCurrentSession().get(Libro.class, id);
 		return team;
