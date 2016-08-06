@@ -17,7 +17,7 @@ public class LibroServicioImpl implements LibroServicio {
 	private LibroDAO libroDAO;
 
 
-	@Transactional
+
 	public List<Libro> buscarLibros() {
 		return libroDAO.buscarLosLibros();
 	}
