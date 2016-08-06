@@ -70,4 +70,14 @@ public class ControladorPrincipal {
 		modeloYVista.addObject("unLibro",libro);
 		return modeloYVista;
 	}
+
+	@RequestMapping(value="/modificar/{id}", method=RequestMethod.POST)
+	public ModelAndView modificarPagina(@ModelAttribute Libro libro, @PathVariable Integer id) {
+
+		ModelAndView modelAndView = new ModelAndView("home");
+
+		libroServicio.modificarLibro(libro);
+
+		return modelAndView;
+	}
 }
