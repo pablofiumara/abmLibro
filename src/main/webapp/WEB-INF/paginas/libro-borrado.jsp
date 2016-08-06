@@ -5,13 +5,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-<title>Pagina principal</title>
+<title>Libro borrado</title>
 </head>
 <body>
-<h1>Libro borrado</h1>
+<h1>Libro ha sido borrado</h1>
 <p>
 ${unMensaje}<br/>
 
+<a href="${pageContext.request.contextPath}/mostrarLibros">Lista de libros</a><br/>
 </p>
 </body>
 </html>
