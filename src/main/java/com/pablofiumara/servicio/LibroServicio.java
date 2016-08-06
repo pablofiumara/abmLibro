@@ -13,6 +13,7 @@ public interface LibroServicio {
 	public void agregoLibro(Libro unLibroNuevo);
 	public Libro buscarUnLibro(int id);
 	public void borrarUnLibro(int id);
+	public void modificarLibro(Libro unLibro);
 
 
 

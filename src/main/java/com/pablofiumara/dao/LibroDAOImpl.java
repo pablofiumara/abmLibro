@@ -48,4 +48,13 @@ public class LibroDAOImpl implements LibroDAO {
 			sessionFactory.getCurrentSession().delete(libro);
 	}
 
+
+	@Transactional
+	public void modificarLibro(Libro unLibro) {
+		Libro libroParaModificar = buscarLibro(unLibro.getId());
+		libroParaModificar.setTitulo(unLibro.getTitulo());
+		sessionFactory.getCurrentSession().update(libroParaModificar);
+
+	}
+
 }

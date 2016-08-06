@@ -14,5 +14,7 @@ public interface LibroDAO {
 	public Libro buscarLibro(int id);
 	public void borrarLibro(int id);
 
+	public void modificarLibro(Libro unLibro);
+
 
 }

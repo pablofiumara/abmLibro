@@ -36,4 +36,9 @@ public class LibroServicioImpl implements LibroServicio {
 	public void borrarUnLibro(int id) {
 		libroDAO.borrarLibro(id);
 	}
+
+	public void modificarLibro(Libro unLibro) {
+		libroDAO.modificarLibro(unLibro);
+	}
+
 }
