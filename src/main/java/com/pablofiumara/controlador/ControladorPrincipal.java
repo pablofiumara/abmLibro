@@ -74,10 +74,10 @@ public class ControladorPrincipal {
 	@RequestMapping(value="/modificar/{id}", method=RequestMethod.POST)
 	public ModelAndView modificarPagina(@ModelAttribute Libro libro, @PathVariable Integer id) {
 
-		ModelAndView modelAndView = new ModelAndView("home");
+		ModelAndView modeloYVista = new ModelAndView("home");
 
 		libroServicio.modificarLibro(libro);
 
-		return modelAndView;
+		return modeloYVista;
 	}
 }
