@@ -5,7 +5,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
+
 
 import com.pablofiumara.dao.LibroDAO;
 import com.pablofiumara.modelo.Libro;
@@ -22,17 +22,17 @@ public class LibroServicioImpl implements LibroServicio {
 		return libroDAO.buscarLosLibros();
 	}
 
-	@Transactional
+
 	public void agregoLibro(Libro unLibro) {
 		libroDAO.agregarUnLibro(unLibro);
 	}
 
-	@Transactional
+
 	public Libro buscarUnLibro(int id) {
 		return libroDAO.buscarLibro(id);
 	}
 
-	@Transactional
+
 	public void borrarUnLibro(int id) {
 		libroDAO.borrarLibro(id);
 	}
