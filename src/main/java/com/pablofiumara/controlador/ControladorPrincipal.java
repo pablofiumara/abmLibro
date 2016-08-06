@@ -22,7 +22,7 @@ public class ControladorPrincipal {
 
 	@RequestMapping(value = "/mostrarLibros")
 	public ModelAndView buscarLibros() {
-		ModelAndView modeloYVista = new ModelAndView("listaDeLibros");
+		ModelAndView modeloYVista = new ModelAndView("lista-de-libros");
 
 		List<Libro> libros = libroServicio.buscarLibros();
 		modeloYVista.addObject("listaLibros", libros);
