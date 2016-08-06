@@ -63,7 +63,7 @@ public class ControladorPrincipal {
 		return modeloYVista;
 	}
 
-	@RequestMapping(value="/edit/{id}, method=RequestMethod.GET")
+	@RequestMapping(value="/modificar/{id}, method=RequestMethod.GET")
 	public ModelAndView modificoLibroPagina(@PathVariable Integer id) {
 		ModelAndView modeloYVista = new ModelAndView("modificar-libro-formulario");
 		Libro libro = libroServicio.buscarUnLibro(id);
