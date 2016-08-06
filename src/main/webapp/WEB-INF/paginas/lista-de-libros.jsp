@@ -12,6 +12,7 @@
 <title>Lista de libros</title>
 </head>
 <body>
+<a href="${pageContext.request.contextPath}/">Volver a la página inicial</a><br/><br/>
 
 <table border="1px" cellpadding="0" cellspacing="0" >
 <thead>
