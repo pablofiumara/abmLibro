@@ -62,4 +62,12 @@ public class ControladorPrincipal {
 		modeloYVista.addObject("unMensaje", mensaje);
 		return modeloYVista;
 	}
+
+	@RequestMapping(value="/edit/{id}, method=RequestMethod.GET")
+	public ModelAndView modificoLibroPagina(@PathVariable Integer id) {
+		ModelAndView modeloYVista = new ModelAndView("modificar-libro-formulario");
+		Libro libro = libroServicio.buscarUnLibro(id);
+		modeloYVista.addObject("unLibro",libro);
+		return modeloYVista;
+	}
 }
