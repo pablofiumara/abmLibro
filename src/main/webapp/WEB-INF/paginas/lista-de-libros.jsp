@@ -27,6 +27,9 @@
 	<td>${unLibro.titulo}</td> <!--  unLibro.titulo refiere al atributo del modelo Libro -->
 	<td>
 	<a href="${pageContext.request.contextPath}/borrar/${unLibro.id}.html">Borrar libro</a><br/>
+	<a href="${pageContext.request.contextPath}/modificar/${unLibro.id}.html">Modificar</a><br/>
+
+
 	</td>
 </tr>
 </c:forEach>
