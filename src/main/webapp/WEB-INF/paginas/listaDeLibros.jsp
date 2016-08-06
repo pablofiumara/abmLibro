@@ -16,7 +16,7 @@
 <table border="1px" cellpadding="0" cellspacing="0" >
 <thead>
 <tr>
-<th width="10%">Id</th><th width="15%">Título</th><th width="10%">Comentarios</th><th width="10%">Otros</th>
+<th width="10%">Id</th><th width="15%">Título</th><th width="10%">Opciones</th><th width="10%">Otros</th>
 </tr>
 </thead>
 <tbody>
