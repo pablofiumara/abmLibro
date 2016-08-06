@@ -42,7 +42,7 @@ public class LibroDAOImpl implements LibroDAO {
 
 
 	@Transactional
-	public void deleteTeam(int id) {
+	public void borrarLibro(int id) {
 		Libro libro = buscarLibro(id);
 		if (libro != null)
 			sessionFactory.getCurrentSession().delete(libro);

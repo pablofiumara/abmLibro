@@ -34,6 +34,6 @@ public class LibroServicioImpl implements LibroServicio {
 
 	@Transactional
 	public void borrarUnLibro(int id) {
-		libroDAO.deleteTeam(id);
+		libroDAO.borrarLibro(id);
 	}
 }
