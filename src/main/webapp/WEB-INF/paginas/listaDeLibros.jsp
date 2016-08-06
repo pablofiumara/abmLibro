@@ -24,6 +24,9 @@
 <tr>
 	<td>${unLibro.id}</td>
 	<td>${unLibro.titulo}</td> <!--  unLibro.titulo refiere al atributo del modelo Libro -->
+	<td>
+	<a href="${pageContext.request.contextPath}/borrar/${unLibro.id}.html">Borrar libro</a><br/>
+	</td>
 </tr>
 </c:forEach>
 </tbody>
