@@ -67,16 +67,18 @@ public class ControladorPrincipal {
 	public ModelAndView modificoLibroPagina(@PathVariable Integer id) {
 		ModelAndView modeloYVista = new ModelAndView("modificar-libro-formulario");
 		Libro libro = libroServicio.buscarUnLibro(id);
-		modeloYVista.addObject("unLibro",libro);
+		modeloYVista.addObject("libro",libro);
 		return modeloYVista;
 	}
 
 	@RequestMapping(value="/modificar/{id}", method=RequestMethod.POST)
 	public ModelAndView modificarPagina(@ModelAttribute Libro libro, @PathVariable Integer id) {
 
-		ModelAndView modeloYVista = new ModelAndView("home");
+		ModelAndView modeloYVista = new ModelAndView("libro-modificado");
 
 		libroServicio.modificarLibro(libro);
+		String mensaje = "El libro se ha editado correctamente";
+		modeloYVista.addObject("unMensaje", mensaje);
 
 		return modeloYVista;
 	}
