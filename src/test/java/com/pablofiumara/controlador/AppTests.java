@@ -1,4 +1,4 @@
-package com.pablofiumara.controller;
+package com.pablofiumara.controlador;
 
 import org.junit.Before;
 import org.junit.Test;
