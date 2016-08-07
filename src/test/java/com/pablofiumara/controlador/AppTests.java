@@ -34,8 +34,8 @@ public class AppTests {
 
     @Test
     public void paginaHome() throws Exception {
-        mockMvc.perform(get("/"))
+        mockMvc.perform(get("/mostrarLibros"))
                 .andExpect(status().isOk())
-                .andExpect(view().name("index"));
+                .andExpect(view().name("lista-de-libros"));
     }
 }
