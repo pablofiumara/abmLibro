@@ -1,7 +1,2 @@
-target/classes
-target/m2e-wtp/web-resources/META-INF/maven/com.pablofiumara/abmLibro/pom.properties
-target/m2e-wtp/web-resources/META-INF/maven/com.pablofiumara/abmLibro/pom.xml
+target/
 *~
-target/maven-archiver/
-target/abmLibro/
-target/abmLibro.war
