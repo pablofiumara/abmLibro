@@ -67,7 +67,7 @@ public class ControladorPrincipal {
 	public ModelAndView modificoLibroPagina(@PathVariable Integer id) {
 		ModelAndView modeloYVista = new ModelAndView("modificar-libro-formulario");
 		Libro libro = libroServicio.buscarUnLibro(id);
-		modeloYVista.addObject("libro",libro);
+		modeloYVista.addObject("unLibro",libro);
 		return modeloYVista;
 	}
 

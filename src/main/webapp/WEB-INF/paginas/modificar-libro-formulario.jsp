@@ -14,7 +14,7 @@
 <h1>Modifique los datos de un libro</h1>
 <p>Complete el formulario de acuerdo a las modificaciones que desee realizar</p>
 
-<form:form method="POST" commandName="libro" action="${pageContext.request.contextPath}/modificar/${libro.id}">
+<form:form method="POST" commandName="unLibro" action="${pageContext.request.contextPath}/modificar/${unLibro.id}">
 <table>
 <tbody>
 
