@@ -28,8 +28,14 @@ public class LibroDAOImpl implements LibroDAO {
 	}
 
 	@Transactional
-	public void agregarUnLibro(Libro unLibro) {
-		sessionFactory.getCurrentSession().save(unLibro);
+	public boolean agregarUnLibro(Libro unLibro) {
+		try {
+			sessionFactory.getCurrentSession().save(unLibro);
+			return true;
+		} catch (Exception error) {
+			System.out.println(error);
+		}
+		return false;
 	}
 
 

@@ -29,8 +29,8 @@ public class LibroServicioImpl implements LibroServicio {
 	}
 
 
-	public void agregoLibro(Libro unLibro) {
-		libroDAO.agregarUnLibro(unLibro);
+	public boolean agregoLibro(Libro unLibro) {
+		return libroDAO.agregarUnLibro(unLibro);
 	}
 
 
