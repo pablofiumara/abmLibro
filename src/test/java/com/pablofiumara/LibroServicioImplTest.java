@@ -57,4 +57,14 @@ public class LibroServicioImplTest {
         //el primer libro de la lista debe ser el que creé
         assertEquals("Chequeo el título de libro", "test: titulo de un libro", testLibro.getTitulo());
     }
+
+    @Test
+    public void testAgregarLibro() throws Exception {
+        Libro libro = new Libro();
+        libro.setTitulo("un nuevo titulo de libro para testear el agregado de un libro");
+
+        when(libroDAO.agregarUnLibro(libro)).thenReturn(true);
+        assertTrue(libroServicio.agregoLibro(libro));
+    }
+
 }
