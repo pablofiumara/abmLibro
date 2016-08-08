@@ -16,7 +16,13 @@ public class LibroServicioImpl implements LibroServicio {
 	@Autowired
 	private LibroDAO libroDAO;
 
+	public LibroDAO getLibroDAO() {
+	        return libroDAO;
+	}
 
+	public void setLibroDAO(LibroDAO libroDAO) {
+	        this.libroDAO = libroDAO;
+	}
 
 	public List<Libro> buscarLibros() {
 		return libroDAO.buscarLosLibros();
