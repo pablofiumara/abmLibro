@@ -17,7 +17,7 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 public class ControladorPrincipalTest{
 
     @InjectMocks
-    ControladorPrincipal indexController;
+    ControladorPrincipal controladorPrincipal;
     @Mock
     LibroServicio libroServicio;
 
@@ -26,7 +26,7 @@ public class ControladorPrincipalTest{
     @Before
     public void before() throws Exception {
         MockitoAnnotations.initMocks(this);
-        mockMvc = MockMvcBuilders.standaloneSetup(indexController).build();
+        mockMvc = MockMvcBuilders.standaloneSetup(controladorPrincipal).build();
     }
 
     @After
