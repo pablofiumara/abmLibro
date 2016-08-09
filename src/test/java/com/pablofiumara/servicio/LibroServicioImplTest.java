@@ -1,4 +1,4 @@
-package com.pablofiumara;
+package com.pablofiumara.servicio;
 
 import org.junit.After;
 import org.junit.Before;
