@@ -34,7 +34,7 @@ public class ControladorPrincipalTest{
     }
 
     @Test
-    public void testIndex() throws Exception {
+    public void testBuscarLibros() throws Exception {
         mockMvc.perform(MockMvcRequestBuilders.get("/mostrarLibros"))
                 .andExpect(MockMvcResultMatchers.view().name("lista-de-libros"));
     }
