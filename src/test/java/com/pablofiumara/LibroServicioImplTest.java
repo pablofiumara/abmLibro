@@ -34,7 +34,7 @@ public class LibroServicioImplTest {
     }
 
     @Test
-    public void testListarLibro() throws Exception {
+    public void testBuscarLibros() throws Exception {
     	//creo libro
         Libro libro = new Libro();
         libro.setTitulo("test: titulo de un libro");
@@ -59,7 +59,7 @@ public class LibroServicioImplTest {
     }
 
     @Test
-    public void testAgregarLibro() throws Exception {
+    public void testAgregoLibro() throws Exception {
     	//creo libro y le asigno un título
         Libro libro = new Libro();
         libro.setTitulo("un nuevo titulo de libro para testear el agregado de un libro");
