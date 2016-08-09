@@ -39,7 +39,7 @@ public class LibroServicioImplTest {
         Libro libro = new Libro();
         libro.setTitulo("test: titulo de un libro");
 
-        //cuando lista.
+        //creo lista mock
         List mockedLista = mock(List.class);
         //agrego algo a la lista...
         mockedLista.add("123");
