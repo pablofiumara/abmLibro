@@ -60,10 +60,14 @@ public class LibroServicioImplTest {
 
     @Test
     public void testAgregarLibro() throws Exception {
+    	//creo libro y le asigno un título
         Libro libro = new Libro();
         libro.setTitulo("un nuevo titulo de libro para testear el agregado de un libro");
 
+        //digo qué debería ocurrir cuando se llame al método agregarUnLibro
+        //espero que el libro se agregue y me devuelva 'true'
         when(libroDAO.agregarUnLibro(libro)).thenReturn(true);
+        //llamo al metodo agregoLibro (que se comunica con el método agregarUnLibro y espero que me responda como mencioné
         assertTrue(libroServicio.agregoLibro(libro));
     }
 
