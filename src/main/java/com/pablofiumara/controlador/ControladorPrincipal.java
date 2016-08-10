@@ -3,7 +3,6 @@ package com.pablofiumara.controlador;
 import java.util.List;
 
 import javax.validation.Valid;
-import javax.validation.Validator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -23,17 +22,6 @@ public class ControladorPrincipal {
 
 	@Autowired
 	private LibroServicio libroServicio;
-
-	private Validator validator;
-
-	public Validator getValidator() {
-	    return validator;
-	}
-
-	@Autowired
-	public void setValidator(Validator validator) {
-	    this.validator = validator;
-	}
 
 	@RequestMapping(value = "/mostrarLibros")
 	public ModelAndView buscarLibros() {
