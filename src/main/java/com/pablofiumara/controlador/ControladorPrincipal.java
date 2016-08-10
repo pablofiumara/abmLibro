@@ -61,7 +61,7 @@ public class ControladorPrincipal {
 	public ModelAndView agregoLibro(@ModelAttribute(value = "unLibro") @Valid Libro unLibro, BindingResult result) {
 
 		AgregarLibroValidacion validacion = new AgregarLibroValidacion();
-		validacion.validate(unLibro, result);
+		validacion.validar(unLibro, result);
 
 		if (result.hasErrors()) {
 			ModelAndView modeloYVista = new ModelAndView("agregar-libro-formulario");

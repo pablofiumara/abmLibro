@@ -12,7 +12,7 @@ public class AgregarLibroValidacion {
     return AgregarLibroFormulario.class.equals(clazz);
   }
 
-  public void validate(Object obj, Errors e) {
+  public void validar(Object obj, Errors e) {
     ValidationUtils.rejectIfEmptyOrWhitespace(e, "titulo", "errorEnTitulo");
   }
 }
