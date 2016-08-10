@@ -16,6 +16,6 @@ public class RegistrationValidator {
   }
 
   public void validate(Object obj, Errors e) {
-    ValidationUtils.rejectIfEmptyOrWhitespace(e, "titulo", "titulo.empty");
+    ValidationUtils.rejectIfEmptyOrWhitespace(e, "titulo", "errorEnTitulo");
   }
 }
