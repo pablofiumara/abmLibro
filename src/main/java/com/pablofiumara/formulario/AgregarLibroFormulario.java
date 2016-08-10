@@ -2,7 +2,7 @@ package com.pablofiumara.formulario;
 
 import javax.validation.constraints.NotNull;
 
-public class RegistrationForm {
+public class AgregarLibroFormulario {
 
 
   @NotNull

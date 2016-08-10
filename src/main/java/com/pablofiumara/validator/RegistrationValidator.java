@@ -12,7 +12,7 @@ import com.pablofiumara.formulario.*;
 public class RegistrationValidator {
 
   public boolean supports(@SuppressWarnings("rawtypes") Class clazz) {
-    return RegistrationForm.class.equals(clazz);
+    return AgregarLibroFormulario.class.equals(clazz);
   }
 
   public void validate(Object obj, Errors e) {
