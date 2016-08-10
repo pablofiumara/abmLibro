@@ -6,7 +6,7 @@ import org.springframework.validation.ValidationUtils;
 import com.pablofiumara.formulario.*;
 
 
-public class RegistrationValidator {
+public class AgregarLibroValidacion {
 
   public boolean supports(@SuppressWarnings("rawtypes") Class clazz) {
     return AgregarLibroFormulario.class.equals(clazz);

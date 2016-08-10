@@ -60,7 +60,7 @@ public class ControladorPrincipal {
 	@RequestMapping(value="/agregarLibro", method=RequestMethod.POST)
 	public ModelAndView agregoLibro(@ModelAttribute(value = "unLibro") @Valid Libro unLibro, BindingResult result) {
 
-		RegistrationValidator asd = new RegistrationValidator();
+		AgregarLibroValidacion asd = new AgregarLibroValidacion();
 		asd.validate(unLibro, result);
 
 		if (result.hasErrors()) {
