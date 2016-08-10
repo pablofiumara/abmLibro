@@ -16,6 +16,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.pablofiumara.modelo.Libro;
 import com.pablofiumara.servicio.LibroServicio; //importo la interfaz
+import com.pablofiumara.validator.*;
 
 @Controller
 public class ControladorPrincipal {
@@ -59,9 +60,11 @@ public class ControladorPrincipal {
 	@RequestMapping(value="/agregarLibro", method=RequestMethod.POST)
 	public ModelAndView agregoLibro(@ModelAttribute(value = "unLibro") @Valid Libro unLibro, BindingResult result) {
 
-		ModelAndView modeloYVista = new ModelAndView("agregar-libro-formulario");
+		RegistrationValidator asd = new RegistrationValidator();
+		asd.validate(unLibro, result);
 
 		if (result.hasErrors()) {
+			ModelAndView modeloYVista = new ModelAndView("agregar-libro-formulario");
 		      return modeloYVista;
 		}
 

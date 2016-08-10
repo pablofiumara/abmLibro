@@ -10,6 +10,21 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <title>Página para agregar libro</title>
+
+<style type="text/css">
+body {
+	background-color: green;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+.error {
+	background-color: #FFF;
+	color: red;
+	text-align: left;
+}
+</style>
+
 </head>
 <body>
 <h1>Agregá un libro</h1>
@@ -20,6 +35,8 @@
 	<tr>
 		<td>Título del libro:</td>
 		<td><form:input path="titulo" /></td>
+		<td><form:errors path="titulo" cssClass="error" /></td>
+
 	</tr>
 	<tr>
 		<td><input type="submit" value="Agregar" /></td>
