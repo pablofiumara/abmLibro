@@ -1,4 +1,4 @@
-package com.pablofiumara.form;
+package com.pablofiumara.formulario;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;

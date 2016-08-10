@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
 
-import com.pablofiumara.form.*;
+import com.pablofiumara.formulario.*;
 
 
 public class RegistrationValidator {
