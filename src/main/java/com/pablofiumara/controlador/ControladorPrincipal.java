@@ -69,13 +69,13 @@ public class ControladorPrincipal {
 		}
 
 
-		ModelAndView modelAndView = new ModelAndView("libro-agregado");
+		ModelAndView modeloYVista = new ModelAndView("libro-agregado");
 		libroServicio.agregoLibro(unLibro);
 
 		String mensaje = "El nuevo libro se ha agregado";
-		modelAndView.addObject("unMensaje", mensaje);
+		modeloYVista.addObject("unMensaje", mensaje);
 
-		return modelAndView;
+		return modeloYVista;
 	}
 
 	@RequestMapping(value="/borrar/{id}", method=RequestMethod.GET)
