@@ -60,8 +60,8 @@ public class ControladorPrincipal {
 	@RequestMapping(value="/agregarLibro", method=RequestMethod.POST)
 	public ModelAndView agregoLibro(@ModelAttribute(value = "unLibro") @Valid Libro unLibro, BindingResult result) {
 
-		AgregarLibroValidacion asd = new AgregarLibroValidacion();
-		asd.validate(unLibro, result);
+		AgregarLibroValidacion validacion = new AgregarLibroValidacion();
+		validacion.validate(unLibro, result);
 
 		if (result.hasErrors()) {
 			ModelAndView modeloYVista = new ModelAndView("agregar-libro-formulario");
