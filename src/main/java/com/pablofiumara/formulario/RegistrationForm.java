@@ -5,7 +5,7 @@ import javax.validation.constraints.NotNull;
 public class RegistrationForm {
 
 
-  @NotNull(message = "User Name field is mandatory.")
+  @NotNull
   private String titulo;
 
   public String getTitulo() {
