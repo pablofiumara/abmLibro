@@ -1,10 +1,13 @@
 package com.pablofiumara.controlador;
 
 import java.util.List;
+
+import javax.validation.Valid;
 import javax.validation.Validator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -54,7 +57,14 @@ public class ControladorPrincipal {
 	}
 
 	@RequestMapping(value="/agregarLibro", method=RequestMethod.POST)
-	public ModelAndView agregoLibro(@ModelAttribute Libro unLibro) {
+	public ModelAndView agregoLibro(@ModelAttribute(value = "unLibro") @Valid Libro unLibro, BindingResult result) {
+
+		ModelAndView modeloYVista = new ModelAndView("agregar-libro-formulario");
+
+		if (result.hasErrors()) {
+		      return modeloYVista;
+		}
+
 
 		ModelAndView modelAndView = new ModelAndView("libro-agregado");
 		libroServicio.agregoLibro(unLibro);
