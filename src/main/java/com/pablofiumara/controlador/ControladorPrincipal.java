@@ -16,7 +16,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.pablofiumara.modelo.Libro;
 import com.pablofiumara.servicio.LibroServicio; //importo la interfaz
-import com.pablofiumara.validator.*;
+import com.pablofiumara.validar.*;
 
 @Controller
 public class ControladorPrincipal {

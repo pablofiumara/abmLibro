@@ -1,4 +1,4 @@
-package com.pablofiumara.validator;
+package com.pablofiumara.validar;
 
 import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
