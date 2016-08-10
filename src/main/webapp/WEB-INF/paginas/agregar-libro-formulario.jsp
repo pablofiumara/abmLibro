@@ -13,7 +13,6 @@
 
 <style type="text/css">
 body {
-	background-color: green;
 	text-align: left;
 	margin: 0;
 	padding: 0;
