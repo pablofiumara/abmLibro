@@ -40,6 +40,7 @@ public class LibroServicioImplTest {
         libro.setTitulo("test: titulo de un libro");
 
         //creo lista mock
+        @SuppressWarnings("rawtypes")//ignoro error 'List is a raw type. References to generic type ...should be parameterized
         List mockedLista = mock(List.class);
         //agrego algo a la lista...
         mockedLista.add("123");
@@ -48,6 +49,7 @@ public class LibroServicioImplTest {
         when(mockedLista.get(0)).thenReturn(libro);
 
         //creo lista con todos los libros
+        @SuppressWarnings("rawtypes")//ignoro error 'List is a raw type. References to generic type ...should be parameterized
         List librosLista = libroDAO.buscarLosLibros();
         assertNotNull(librosLista);
         //tomo el primer libro de la lista
