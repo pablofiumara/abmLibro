@@ -28,12 +28,12 @@ public class ApplicationController {
 
     }
 
-    @RequestMapping(value = "/Print/{arg}", method = RequestMethod.GET)
+    @RequestMapping(value = "/print/{arg}", method = RequestMethod.GET)
     public String welcomeName(@PathVariable String arg, ModelMap model) {
         model.addAttribute("msgArgument",
                 "Maven Java Web Application Project, input variable: " + arg);
 
-        return "index";
+        return "test";
     }
 
     @RequestMapping(value = "/convert/{fromCur}/{toCur}/{amount}", method = RequestMethod.GET)
@@ -49,7 +49,7 @@ public class ApplicationController {
 
         model.addAttribute("msgArgument","Maven Java Web Application Project, input variable: " + result);
 
-        return "index";
+        return "test";
     }
 
 }
