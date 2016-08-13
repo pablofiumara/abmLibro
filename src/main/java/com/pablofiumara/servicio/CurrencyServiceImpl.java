@@ -2,25 +2,56 @@ package com.pablofiumara.servicio;
 
 import com.pablofiumara.wsdl.*;
 
+import java.text.SimpleDateFormat;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.ws.client.core.WebServiceTemplate;
+import org.springframework.ws.soap.client.core.SoapActionCallback;
 
 @Service
 public class CurrencyServiceImpl implements CurrencyService {
 
-    @Autowired
-    protected WebServiceTemplate webServiceTemplate;
+	@Autowired
+	private WebServiceTemplate weatherWebServiceTemplate;
 
-    @Override
-    public Double getConversionRate(Currency fromCurrency, Currency toCurrency) {
-        ConversionRate conversionRate = new ObjectFactory().createConversionRate();
-        conversionRate.setFromCurrency(fromCurrency);
-        conversionRate.setToCurrency(toCurrency);
+	public GetCityForecastByZIPResponse getCityForecastByZip(String zipCode) {
+		GetCityForecastByZIP request = new GetCityForecastByZIP();
+		request.setZIP(zipCode);
 
-        ConversionRateResponse response = (ConversionRateResponse) webServiceTemplate.marshalSendAndReceive(conversionRate);
+		GetCityForecastByZIPResponse response = (GetCityForecastByZIPResponse) weatherWebServiceTemplate
+				.marshalSendAndReceive(request, new SoapActionCallback(
+						"http://ws.cdyne.com/WeatherWS/GetCityForecastByZIP"));
+		return response;
+	}
 
-        return response.getConversionRateResult();
-    }
+	public String printResponse(GetCityForecastByZIPResponse response) {
+		StringBuilder result = new StringBuilder();
+		ForecastReturn forecastReturn = response
+				.getGetCityForecastByZIPResult();
+
+		if (forecastReturn.isSuccess()) {
+			result.append("\n");
+			result.append("Forecast for " + forecastReturn.getCity() + ", "
+					+ forecastReturn.getState() + "\n");
+
+			SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+			for (Forecast forecast : forecastReturn.getForecastResult()
+					.getForecast()) {
+				result.append(format.format(forecast.getDate()
+						.toGregorianCalendar().getTime()));
+				result.append(" ");
+				result.append(forecast.getDesciption());
+				result.append(" ");
+				Temp temperature = forecast.getTemperatures();
+				result.append(temperature.getMorningLow() + "\u00b0-"
+						+ temperature.getDaytimeHigh() + "\u00b0 ");
+				result.append("\n");
+			}
+		} else {
+			result.append("No forecast received\n");
+		}
+		return result.toString();
+	}
 
 }
