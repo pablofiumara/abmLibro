@@ -34,7 +34,7 @@ public class ControladorServicioWeb {
 		if (pronosticoRespuesta.isSuccess()) {
 			List<Forecast> pronosticos = pronosticoRespuesta.getForecastResult().getForecast();
 			modelo.addAttribute("unaRespuestaPronostico", pronosticoRespuesta);
-			modelo.addAttribute("forecasts", pronosticos);			
+			modelo.addAttribute("pronosticosLista", pronosticos);			
 		}
 	}
 }

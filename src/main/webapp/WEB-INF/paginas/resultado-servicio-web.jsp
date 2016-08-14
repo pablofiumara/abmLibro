@@ -11,7 +11,7 @@
 			<th>TemperaturaMínima(&#176;C)</th>
 			<th>TemperaturaMáxima(&#176;C)</th>
 		</tr>
-		<c:forEach items="${forecasts}" var="forecast">
+		<c:forEach items="${pronosticosLista}" var="forecast">
 			<tr>
 				<td><fmt:formatDate pattern="yyyy-MM-dd" value="${forecast.getDate().toGregorianCalendar().getTime()}"/></td>
 				<td>${forecast.getDesciption()}</td>
