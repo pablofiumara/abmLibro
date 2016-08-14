@@ -36,8 +36,7 @@ public class ControladorServicioWeb {
 			List<Forecast> forecasts = forecastReturn.getForecastResult()
 					.getForecast();
 			model.addAttribute("forecastReturn", forecastReturn);
-			model.addAttribute("forecasts", forecasts);
-			client.printResponse(response);
+			model.addAttribute("forecasts", forecasts);			
 		}
 	}
 }

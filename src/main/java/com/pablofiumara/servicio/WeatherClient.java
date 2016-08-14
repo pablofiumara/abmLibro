@@ -1,7 +1,5 @@
 package com.pablofiumara.servicio;
 
-import java.text.SimpleDateFormat;
-
 import com.pablofiumara.wsdl.*;
 
 import org.springframework.oxm.jaxb.Jaxb2Marshaller;
@@ -28,28 +26,5 @@ public class WeatherClient extends WebServiceGatewaySupport{
 		GetCityForecastByZIPResponse response = (GetCityForecastByZIPResponse) getWebServiceTemplate()
 				.marshalSendAndReceive(request,new SoapActionCallback("http://ws.cdyne.com/WeatherWS/GetCityForecastByZIP"));
 		return response;
-	}
-	public void printResponse(GetCityForecastByZIPResponse response) {
-		ForecastReturn forecastReturn = response.getGetCityForecastByZIPResult();
-
-		if (forecastReturn.isSuccess()) {
-			System.out.println();
-			System.out.println("Forecast for " + forecastReturn.getCity() + ", "
-					+ forecastReturn.getState());
-
-			SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
-			for (Forecast forecast : forecastReturn.getForecastResult().getForecast()) {
-				System.out.print(format.format(forecast.getDate().toGregorianCalendar().getTime()));
-				System.out.print(" ");
-				System.out.print(forecast.getDesciption());
-				System.out.print(" ");
-				Temp temperature = forecast.getTemperatures();
-				System.out.print(temperature.getMorningLow() + "\u00b0-"
-						+ temperature.getDaytimeHigh() + "\u00b0 ");
-				System.out.println();
-			}
-		} else {
-			System.out.println("No forecast received");
-		}
-	}
+	}	
 }
