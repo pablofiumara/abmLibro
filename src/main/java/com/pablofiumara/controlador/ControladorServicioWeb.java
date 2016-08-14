@@ -30,9 +30,9 @@ public class ControladorServicioWeb {
 		marshaller.setContextPath("com.pablofiumara.wsdl");
 		
 		
-		TiempoServicio cliente = new TiempoServicio(marshaller);
+		TiempoServicio unTiempoServicio = new TiempoServicio(marshaller);
 		String elCodigoPostal = request.getParameter("codigoPostal").trim();
-		GetCityForecastByZIPResponse response = cliente.buscarPronosticoParaCiudadPorCodigoPostal(elCodigoPostal);
+		GetCityForecastByZIPResponse response = unTiempoServicio.buscarPronosticoParaCiudadPorCodigoPostal(elCodigoPostal);
 		ForecastReturn pronosticoRespuesta = response.getGetCityForecastByZIPResult();
 		
 		
