@@ -13,7 +13,7 @@
 		</tr>
 		<c:forEach items="${pronosticosLista}" var="forecast">
 			<tr>
-				<td><fmt:formatDate pattern="yyyy-MM-dd" value="${forecast.getDate().toGregorianCalendar().getTime()}"/></td>
+				<td><fmt:formatDate pattern="dd-MM-yyyy" value="${forecast.getDate().toGregorianCalendar().getTime()}"/></td>
 				<td>${forecast.getDesciption()}</td>
 				<td>${forecast.getTemperatures().getMorningLow()}</td>
 				<td>${forecast.getTemperatures().getDaytimeHigh()}</td>
