@@ -33,10 +33,10 @@ public class ControladorServicioWeb {
 		ForecastReturn pronosticoRespuesta = response
 				.getGetCityForecastByZIPResult();
 		if (pronosticoRespuesta.isSuccess()) {
-			List<Forecast> forecasts = pronosticoRespuesta.getForecastResult()
+			List<Forecast> pronosticos = pronosticoRespuesta.getForecastResult()
 					.getForecast();
 			modelo.addAttribute("forecastReturn", pronosticoRespuesta);
-			modelo.addAttribute("forecasts", forecasts);			
+			modelo.addAttribute("forecasts", pronosticos);			
 		}
 	}
 }
