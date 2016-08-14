@@ -20,7 +20,7 @@ public class ControladorServicioWeb {
 
 	@RequestMapping(value = "/servicio-web", method = RequestMethod.GET)
 	public String getServicioWebPagina() {		
-		return "servicio-web-form";
+		return "servicio-web-formulario";
 	}
 
 	@RequestMapping(value = "/resultado-servicio-web", method = RequestMethod.POST)
