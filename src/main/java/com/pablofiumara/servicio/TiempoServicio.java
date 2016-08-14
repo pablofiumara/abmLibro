@@ -16,7 +16,7 @@ public class TiempoServicio extends WebServiceGatewaySupport{
 		this.setMarshaller(marshaller);
 		this.setUnmarshaller(marshaller);
 	}
-	public GetCityForecastByZIPResponse getCityForecastByZip(String unCodigoPostal) {
+	public GetCityForecastByZIPResponse buscarPronosticoParaCiudadPorCodigoPostal(String unCodigoPostal) {
 		GetCityForecastByZIP request = new GetCityForecastByZIP();
 		request.setZIP(unCodigoPostal);
 

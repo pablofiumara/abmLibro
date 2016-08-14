@@ -32,7 +32,7 @@ public class ControladorServicioWeb {
 		
 		TiempoServicio cliente = new TiempoServicio(marshaller);
 		String elCodigoPostal = request.getParameter("codigoPostal").trim();
-		GetCityForecastByZIPResponse response = cliente.getCityForecastByZip(elCodigoPostal);
+		GetCityForecastByZIPResponse response = cliente.buscarPronosticoParaCiudadPorCodigoPostal(elCodigoPostal);
 		ForecastReturn pronosticoRespuesta = response.getGetCityForecastByZIPResult();
 		
 		
