@@ -19,13 +19,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class MainController {
 
 	@RequestMapping(value = "/test", method = RequestMethod.GET)
-	public String getMainPage() {
+	public String getServicioWebPagina() {
 		System.out.println("&&&&&&&&&&&&&&&&");
 		return "servicio-web";
 	}
 
 	@RequestMapping(value = "/resultado-servicio-web", method = RequestMethod.POST)
-	public void postMainPage(HttpServletRequest request, Model model) {
+	public void postResultadoServicioWeb(HttpServletRequest request, Model model) {
 		System.out.println("***************");
 		Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
 		marshaller.setContextPath("com.pablofiumara.wsdl");
