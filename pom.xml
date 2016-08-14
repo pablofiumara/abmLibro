@@ -15,6 +15,7 @@
 
 
 	<dependencies>
+		<!-- Dependencias relacionadas los Servicios Web -->
 		<dependency>
 			<groupId>org.springframework.ws</groupId>
 			<artifactId>spring-ws-core</artifactId>
@@ -170,55 +171,55 @@
 					</configuration>
 				</plugin>
 				<plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>jaxb2-maven-plugin</artifactId>
-                <version>1.5</version>
-                <!--  Ejecutar mvn clean jaxb2:xjc para generar archivos .java --> 
-                <!--  (usarlos en mi aplicación para utilizar el Servicio Web   -->
-                <executions>
-                    <execution>
-                        <id>xjc</id>
-                        <goals>
-                            <goal>xjc</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <!-- Package to store the generated file -->
-                    <packageName>com.pablofiumara.wsdl</packageName>
-                    <!-- Treat the input as WSDL -->
-                    <wsdl>true</wsdl>
-                    <!-- Input is not XML schema -->
-                    <xmlschema>false</xmlschema>
-                    <!-- The WSDL file that you saved earlier -->
-                    <schemaFiles>CurrencyConvertor.wsdl</schemaFiles>
-                    <!-- The location of the WSDL file -->
-                    <schemaDirectory>${project.basedir}/src/main/resources/services/wsdl</schemaDirectory>
-                    <!-- The output directory to store the generated Java files -->
-                    <outputDirectory>${project.basedir}/src/main/java</outputDirectory>
-                    <!-- Don't clear output directory on each run -->
-                    <clearOutputDir>false</clearOutputDir>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>build-helper-maven-plugin</artifactId>
-                <version>1.8</version>
-                <executions>
-                    <execution>
-                        <id>add-source</id>
-                        <phase>generate-sources</phase>
-                        <goals>
-                            <goal>add-source</goal>
-                        </goals>
-                        <configuration>
-                            <sources>
-                                <source>${project.build.directory}/generated-sources/jaxbwsdl</source>
-                            </sources>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>jaxb2-maven-plugin</artifactId>
+					<version>1.5</version>
+					<!-- Ejecutar mvn clean jaxb2:xjc para generar archivos .java -->
+					<!-- (usarlos en mi aplicación para utilizar el Servicio Web -->
+					<executions>
+						<execution>
+							<id>xjc</id>
+							<goals>
+								<goal>xjc</goal>
+							</goals>
+						</execution>
+					</executions>
+					<configuration>
+						<!-- Package to store the generated file -->
+						<packageName>com.pablofiumara.wsdl</packageName>
+						<!-- Treat the input as WSDL -->
+						<wsdl>true</wsdl>
+						<!-- Input is not XML schema -->
+						<xmlschema>false</xmlschema>
+						<!-- The WSDL file that you saved earlier -->
+						<schemaFiles>CurrencyConvertor.wsdl</schemaFiles>
+						<!-- The location of the WSDL file -->
+						<schemaDirectory>${project.basedir}/src/main/resources/services/wsdl</schemaDirectory>
+						<!-- The output directory to store the generated Java files -->
+						<outputDirectory>${project.basedir}/src/main/java</outputDirectory>
+						<!-- Don't clear output directory on each run -->
+						<clearOutputDir>false</clearOutputDir>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>build-helper-maven-plugin</artifactId>
+					<version>1.8</version>
+					<executions>
+						<execution>
+							<id>add-source</id>
+							<phase>generate-sources</phase>
+							<goals>
+								<goal>add-source</goal>
+							</goals>
+							<configuration>
+								<sources>
+									<source>${project.build.directory}/generated-sources/jaxbwsdl</source>
+								</sources>
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>
 			</plugins>
 		</pluginManagement>
 		<finalName>abmLibro</finalName>
