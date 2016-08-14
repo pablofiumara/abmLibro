@@ -16,9 +16,9 @@ public class TiempoServicio extends WebServiceGatewaySupport{
 		this.setMarshaller(marshaller);
 		this.setUnmarshaller(marshaller);
 	}
-	public GetCityForecastByZIPResponse getCityForecastByZip(String zipCode) {
+	public GetCityForecastByZIPResponse getCityForecastByZip(String unCodigoPostal) {
 		GetCityForecastByZIP request = new GetCityForecastByZIP();
-		request.setZIP(zipCode);
+		request.setZIP(unCodigoPostal);
 
 		GetCityForecastByZIPResponse response = (GetCityForecastByZIPResponse) getWebServiceTemplate().marshalSendAndReceive(request,new SoapActionCallback("http://ws.cdyne.com/WeatherWS/GetCityForecastByZIP"));
 		return response;
