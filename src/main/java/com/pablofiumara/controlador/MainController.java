@@ -21,7 +21,7 @@ public class MainController {
 	@RequestMapping(value = "/test", method = RequestMethod.GET)
 	public String getMainPage() {
 		System.out.println("&&&&&&&&&&&&&&&&");
-		return "index1";
+		return "servicio-web";
 	}
 
 	@RequestMapping(value = "/result", method = RequestMethod.POST)
