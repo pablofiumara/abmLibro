@@ -26,11 +26,16 @@ public class ControladorServicioWeb {
 	@RequestMapping(value = "/resultado-servicio-web", method = RequestMethod.POST)
 	public void postResultadoServicioWeb(HttpServletRequest request, Model modelo) {		
 		Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
+		//paquete donde se encuentran los archivos .java generados por el Servicio Web
 		marshaller.setContextPath("com.pablofiumara.wsdl");
+		
+		
 		TiempoServicio cliente = new TiempoServicio(marshaller);
 		String elCodigoPostal = request.getParameter("codigoPostal").trim();
 		GetCityForecastByZIPResponse response = cliente.getCityForecastByZip(elCodigoPostal);
 		ForecastReturn pronosticoRespuesta = response.getGetCityForecastByZIPResult();
+		
+		
 		if (pronosticoRespuesta.isSuccess()) {
 			List<Forecast> pronosticos = pronosticoRespuesta.getForecastResult().getForecast();
 			modelo.addAttribute("unaRespuestaPronostico", pronosticoRespuesta);
