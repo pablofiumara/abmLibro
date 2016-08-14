@@ -30,11 +30,9 @@ public class ControladorServicioWeb {
 		TiempoServicio cliente = new TiempoServicio(marshaller);
 		String elCodigoPostal = request.getParameter("codigoPostal").trim();
 		GetCityForecastByZIPResponse response = cliente.getCityForecastByZip(elCodigoPostal);
-		ForecastReturn pronosticoRespuesta = response
-				.getGetCityForecastByZIPResult();
+		ForecastReturn pronosticoRespuesta = response.getGetCityForecastByZIPResult();
 		if (pronosticoRespuesta.isSuccess()) {
-			List<Forecast> pronosticos = pronosticoRespuesta.getForecastResult()
-					.getForecast();
+			List<Forecast> pronosticos = pronosticoRespuesta.getForecastResult().getForecast();
 			modelo.addAttribute("forecastReturn", pronosticoRespuesta);
 			modelo.addAttribute("forecasts", pronosticos);			
 		}
