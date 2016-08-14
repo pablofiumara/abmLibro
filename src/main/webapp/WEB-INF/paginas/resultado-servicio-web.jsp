@@ -3,7 +3,7 @@
 
 <html>
 <body>
-	<h1>Forecast for ${unaRespuestaPronostico.getCity()}, ${unaRespuestaPronostico.getState()}</h1>
+	<h1>Pronóstico para ${unaRespuestaPronostico.getCity()}, ${unaRespuestaPronostico.getState()}</h1>
 	<table border="1">
 		<tr>
 			<th>Fecha</th>
