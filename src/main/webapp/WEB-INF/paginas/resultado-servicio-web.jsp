@@ -6,10 +6,10 @@
 	<h1>Forecast for ${forecastReturn.getCity()}, ${forecastReturn.getState()}</h1>
 	<table border="1">
 		<tr>
-			<th>Date</th>
-			<th>Desciption</th>
-			<th>LowTemp(&#176;C)</th>
-			<th>HighTemp(&#176;C)</th>
+			<th>Fecha</th>
+			<th>Descripción</th>
+			<th>TemperaturaMínima(&#176;C)</th>
+			<th>TemperaturaMáxima(&#176;C)</th>
 		</tr>
 		<c:forEach items="${forecasts}" var="forecast">
 			<tr>
