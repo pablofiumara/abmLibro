@@ -28,7 +28,7 @@ public class ControladorServicioWeb {
 		Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
 		marshaller.setContextPath("com.pablofiumara.wsdl");
 		WeatherClient client = new WeatherClient(marshaller);
-		String zip = request.getParameter("zip").trim();
+		String zip = request.getParameter("codigoPostal").trim();
 		GetCityForecastByZIPResponse response = client.getCityForecastByZip(zip);
 		ForecastReturn forecastReturn = response
 				.getGetCityForecastByZIPResult();
