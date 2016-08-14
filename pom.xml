@@ -173,6 +173,8 @@
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>jaxb2-maven-plugin</artifactId>
                 <version>1.5</version>
+                <!--  Ejecutar mvn clean jaxb2:xjc para generar archivos .java --> 
+                <!--  (usarlos en mi aplicación para utilizar el Servicio Web   -->
                 <executions>
                     <execution>
                         <id>xjc</id>
