@@ -8,8 +8,8 @@
 		<tr>
 			<th>Fecha</th>
 			<th>Descripción</th>
-			<th>TemperaturaMínima(&#176;C)</th>
-			<th>TemperaturaMáxima(&#176;C)</th>
+			<th>TemperaturaMínima(&#176;F)</th>
+			<th>TemperaturaMáxima(&#176;F)</th>
 		</tr>
 		<c:forEach items="${pronosticosLista}" var="forecast">
 			<tr>
