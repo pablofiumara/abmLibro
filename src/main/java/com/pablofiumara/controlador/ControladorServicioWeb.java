@@ -24,7 +24,7 @@ public class ControladorServicioWeb {
 	}
 
 	@RequestMapping(value = "/resultado-servicio-web", method = RequestMethod.POST)
-	public void postResultadoServicioWeb(HttpServletRequest request, Model model) {		
+	public void postResultadoServicioWeb(HttpServletRequest request, Model modelo) {		
 		Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
 		marshaller.setContextPath("com.pablofiumara.wsdl");
 		TiempoServicio cliente = new TiempoServicio(marshaller);
@@ -35,8 +35,8 @@ public class ControladorServicioWeb {
 		if (forecastReturn.isSuccess()) {
 			List<Forecast> forecasts = forecastReturn.getForecastResult()
 					.getForecast();
-			model.addAttribute("forecastReturn", forecastReturn);
-			model.addAttribute("forecasts", forecasts);			
+			modelo.addAttribute("forecastReturn", forecastReturn);
+			modelo.addAttribute("forecasts", forecasts);			
 		}
 	}
 }
