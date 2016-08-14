@@ -28,8 +28,8 @@ public class ControladorServicioWeb {
 		Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
 		marshaller.setContextPath("com.pablofiumara.wsdl");
 		TiempoServicio client = new TiempoServicio(marshaller);
-		String zip = request.getParameter("codigoPostal").trim();
-		GetCityForecastByZIPResponse response = client.getCityForecastByZip(zip);
+		String elCodigoPostal = request.getParameter("codigoPostal").trim();
+		GetCityForecastByZIPResponse response = client.getCityForecastByZip(elCodigoPostal);
 		ForecastReturn forecastReturn = response
 				.getGetCityForecastByZIPResult();
 		if (forecastReturn.isSuccess()) {
