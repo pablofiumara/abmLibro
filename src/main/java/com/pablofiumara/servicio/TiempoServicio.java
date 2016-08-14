@@ -23,8 +23,7 @@ public class TiempoServicio extends WebServiceGatewaySupport{
 		System.out.println();
 		System.out.println("Requesting forecast for " + zipCode);
 		
-		GetCityForecastByZIPResponse response = (GetCityForecastByZIPResponse) getWebServiceTemplate()
-				.marshalSendAndReceive(request,new SoapActionCallback("http://ws.cdyne.com/WeatherWS/GetCityForecastByZIP"));
+		GetCityForecastByZIPResponse response = (GetCityForecastByZIPResponse) getWebServiceTemplate().marshalSendAndReceive(request,new SoapActionCallback("http://ws.cdyne.com/WeatherWS/GetCityForecastByZIP"));
 		return response;
 	}	
 }
