@@ -24,7 +24,7 @@ public class MainController {
 		return "servicio-web";
 	}
 
-	@RequestMapping(value = "/result", method = RequestMethod.POST)
+	@RequestMapping(value = "/resultado-servicio-web", method = RequestMethod.POST)
 	public void postMainPage(HttpServletRequest request, Model model) {
 		System.out.println("***************");
 		Jaxb2Marshaller marshaller = new Jaxb2Marshaller();

@@ -2,7 +2,7 @@
 
 <html>
 <body>
-	<form  action="result" method="POST">
+	<form  action="resultado-servicio-web" method="POST">
 		Input ZipCode:<br> 
 		<input type="text" name="zip"><br>
 		<input type="submit" value="submit">
