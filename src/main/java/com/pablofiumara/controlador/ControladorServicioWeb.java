@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class ControladorServicioWeb {
 
-	@RequestMapping(value = "/test", method = RequestMethod.GET)
+	@RequestMapping(value = "/servicio-web-formulario", method = RequestMethod.GET)
 	public String getServicioWebPagina() {		
 		return "servicio-web";
 	}
