@@ -3,6 +3,7 @@
 
 <html>
 <body>
+	<a href="${pageContext.request.contextPath}/">Volver a la página inicial</a><br/><br/>
 	<h1>Pronóstico para ${unaRespuestaPronostico.getCity()}, ${unaRespuestaPronostico.getState()}</h1>
 	<table border="1">
 		<tr>
