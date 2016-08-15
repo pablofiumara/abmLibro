@@ -16,6 +16,13 @@
 
 
 	<dependencies>
+		<dependency>
+		    <groupId>org.springframework.security</groupId>
+		    <artifactId>spring-security-config</artifactId>
+		    <version>3.0.5.RELEASE</version>
+		</dependency>
+		
+
 		<!-- Dependencias relacionadas los Servicios Web -->
 		<dependency>
 			<groupId>org.springframework.ws</groupId>
