@@ -11,23 +11,23 @@
 	<properties>
 		<hibernate.version>4.2.0.Final</hibernate.version>
 		<mockito.version>1.9.5</mockito.version>
-                <spring.version>4.0.5.RELEASE</spring.version>
+		<spring.version>4.0.5.RELEASE</spring.version>
+		<spring.security.version>3.0.5.RELEASE</spring.security.version>
 	</properties>
 
 
 	<dependencies>
+		<!-- Dependencias relacionadas con el Login -->
 		<dependency>
-		    <groupId>org.springframework.security</groupId>
-		    <artifactId>spring-security-web</artifactId>
-		    <version>3.0.5.RELEASE</version>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>${spring.security.version}</version>
 		</dependency>
 		<dependency>
-		    <groupId>org.springframework.security</groupId>
-		    <artifactId>spring-security-config</artifactId>
-		    <version>3.0.5.RELEASE</version>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>${spring.security.version}</version>
 		</dependency>
-		
-
 		<!-- Dependencias relacionadas los Servicios Web -->
 		<dependency>
 			<groupId>org.springframework.ws</groupId>
@@ -87,7 +87,7 @@
 			<artifactId>spring-jdbc</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-                <dependency>
+		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-tx</artifactId>
 			<version>${spring.version}</version>
