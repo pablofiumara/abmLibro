@@ -50,7 +50,7 @@ body {
 <body>
 
 	
-	<div class="container theme-showcase">
+	<div>
 	
 	<c:if test="${not empty error}">
 		<div class="errorblock form-signin">
