@@ -62,7 +62,7 @@ body {
 			<h2 class="form-signin-heading"><spring:message code="login.title"/></h2>
 			<input type="text" name='j_username' class="form-control" placeholder="<spring:message code="login.username"/>" required autofocus> 
 			<input type="password" name='j_password' class="form-control" placeholder="<spring:message code="login.password"/>" required> 
-			<button class="btn btn-lg btn-primary btn-block" type="submit"><spring:message code="login.button.login"/></button>
+			<button type="submit"><spring:message code="login.button.login"/></button>
 		</form>
 
 	</div>
