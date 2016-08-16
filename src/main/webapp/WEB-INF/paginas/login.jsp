@@ -6,7 +6,7 @@
 <html>
 <head>
 <!-- HEAD -->
-<c:import url="head.jsp" />
+
 
 <style type="text/css">
 body {
