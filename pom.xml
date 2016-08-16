@@ -202,7 +202,7 @@
 						<wsdl>true</wsdl>						
 						<xmlschema>false</xmlschema>						
 						<schemaFiles>tiempo.wsdl</schemaFiles>						
-						<schemaDirectory>${project.basedir}/src/main/resources/services/wsdl</schemaDirectory>						
+						<schemaDirectory>${project.basedir}/src/main/resources/servicios/wsdl</schemaDirectory>						
 						<outputDirectory>${project.basedir}/src/main/java</outputDirectory>						
 						<clearOutputDir>false</clearOutputDir>
 					</configuration>
