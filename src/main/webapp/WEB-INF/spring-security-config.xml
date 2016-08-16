@@ -13,7 +13,7 @@
 	<http auto-config="true">
 		<intercept-url pattern="/agregar*" access="ROLE_USER" />
 		<form-login login-page="/login" default-target-url="/agregar"
-			authentication-failure-url="/loginfailed" />
+			authentication-failure-url="/login-error" />
 		<logout logout-success-url="/logout" />
 	</http>
 
