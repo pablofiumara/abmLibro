@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- HEAD -->
+
 
 
 <style type="text/css">
@@ -49,7 +49,7 @@ body {
 </head>
 <body>
 
-	<!-- CONTAINER -->
+	
 	<div class="container theme-showcase">
 	
 	<c:if test="${not empty error}">
