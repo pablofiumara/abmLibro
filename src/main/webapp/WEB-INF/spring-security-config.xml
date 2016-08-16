@@ -20,8 +20,8 @@
 	<authentication-manager>
 		<authentication-provider>
 			<jdbc-user-service data-source-ref="miDataSource"
-				users-by-username-query="${security.username.query}"
-				authorities-by-username-query="${security.authorities.query}"  />
+				users-by-username-query="${usuario}"
+				authorities-by-username-query="${rol}"  />
 		</authentication-provider>
 	</authentication-manager>
 
