@@ -188,7 +188,7 @@
 					<artifactId>jaxb2-maven-plugin</artifactId>
 					<version>1.5</version>
 					<!-- Ejecutar mvn clean jaxb2:xjc para generar archivos .java -->
-					<!-- (usarlos en mi aplicación para utilizar el Servicio Web -->
+					<!-- usarlos en mi aplicación para utilizar el Servicio Web -->
 					<executions>
 						<execution>
 							<id>xjc</id>
@@ -200,9 +200,9 @@
 					<configuration>						
 						<packageName>com.pablofiumara.wsdl</packageName>						
 						<wsdl>true</wsdl>						
-						<xmlschema>false</xmlschema>						
+						<xmlschema>false</xmlschema>
+						<schemaDirectory>${project.basedir}/src/main/resources/servicios/wsdl</schemaDirectory>
 						<schemaFiles>tiempo.wsdl</schemaFiles>						
-						<schemaDirectory>${project.basedir}/src/main/resources/servicios/wsdl</schemaDirectory>						
 						<outputDirectory>${project.basedir}/src/main/java</outputDirectory>						
 						<clearOutputDir>false</clearOutputDir>
 					</configuration>
