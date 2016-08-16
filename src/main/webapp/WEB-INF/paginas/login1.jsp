@@ -32,13 +32,19 @@ body {
 <table>
 <tbody>
 	<tr>
-		<td>Título del libro:</td>
-		<td><form:input path="titulo" /></td>
+		<td>Nombre de usuario:</td>
+		<td><form:input path="usuario" /></td>
 		<td><form:errors path="titulo" cssClass="error" /></td>
 
 	</tr>
+		<tr>
+		<td>Contraseña:</td>
+		<td><form:input path="contraseña" /></td>
+		<td><form:errors path="contraseña" cssClass="error" /></td>
+
+	</tr>
 	<tr>
-		<td><input type="submit" value="Agregar" /></td>
+		<td><input type="submit" value="Ingresar" /></td>
 		<td></td>
 	</tr>
 </tbody>
