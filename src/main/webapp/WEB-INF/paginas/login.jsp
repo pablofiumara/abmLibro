@@ -6,13 +6,6 @@
 <html>
 <head>
 
-<script type="text/javascript">
-
-function valid() {
-	alert("hello");
-}
-</script>
-
 <style type="text/css">
 body {
 	padding-top: 70px;
@@ -59,14 +52,14 @@ body {
 	
 	<c:if test="${not empty error}">
 		<div class="errorblock form-signin">
-			Tu login no fue exitoso. Por favor, intentá de nuevo.
+			Tu login no fue exitoso. Por favor, intentá de nuevo. Recordá completar todos los campos del formulario. 
 		</div>
 	</c:if>
 	
-		<form class="form-signin" role="form" action="<c:url value='j_spring_security_check' />" method='POST' onsubmit="return valid();">
+		<form class="form-signin" role="form" action="<c:url value='j_spring_security_check' />" method='POST'>
 			<h2 class="form-signin-heading"><spring:message code="login.titulo"/></h2>
-			<input type="text" name='j_username' placeholder="<spring:message code="login.usuario"/>" required autofocus> 
-			<input type="password" name='j_password' placeholder="<spring:message code="login.password"/>" required> 
+			<input type="text" name='j_username' placeholder="<spring:message code="login.usuario"/>" autofocus> 
+			<input type="password" name='j_password' placeholder="<spring:message code="login.password"/>" > 
 			<button type="submit"><spring:message code="login.boton.login"/></button>
 		</form>
 
