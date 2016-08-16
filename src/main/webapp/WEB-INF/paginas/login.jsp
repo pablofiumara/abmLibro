@@ -54,8 +54,7 @@ body {
 	
 	<c:if test="${not empty error}">
 		<div class="errorblock form-signin">
-			Your login attempt was not successful, try again.<br /> Caused :
-			${sessionScope["SPRING_SECURITY_LAST_EXCEPTION"].message}
+			Tu login no fue exitoso. Por favor, intentá de nuevo.
 		</div>
 	</c:if>
 	
