@@ -197,20 +197,13 @@
 							</goals>
 						</execution>
 					</executions>
-					<configuration>
-						<!-- Package to store the generated file -->
-						<packageName>com.pablofiumara.wsdl</packageName>
-						<!-- Treat the input as WSDL -->
-						<wsdl>true</wsdl>
-						<!-- Input is not XML schema -->
-						<xmlschema>false</xmlschema>
-						<!-- The WSDL file that you saved earlier -->
-						<schemaFiles>CurrencyConvertor.wsdl</schemaFiles>
-						<!-- The location of the WSDL file -->
-						<schemaDirectory>${project.basedir}/src/main/resources/services/wsdl</schemaDirectory>
-						<!-- The output directory to store the generated Java files -->
-						<outputDirectory>${project.basedir}/src/main/java</outputDirectory>
-						<!-- Don't clear output directory on each run -->
+					<configuration>						
+						<packageName>com.pablofiumara.wsdl</packageName>						
+						<wsdl>true</wsdl>						
+						<xmlschema>false</xmlschema>						
+						<schemaFiles>tiempo.wsdl</schemaFiles>						
+						<schemaDirectory>${project.basedir}/src/main/resources/services/wsdl</schemaDirectory>						
+						<outputDirectory>${project.basedir}/src/main/java</outputDirectory>						
 						<clearOutputDir>false</clearOutputDir>
 					</configuration>
 				</plugin>
