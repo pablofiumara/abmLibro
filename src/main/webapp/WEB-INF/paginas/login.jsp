@@ -6,7 +6,12 @@
 <html>
 <head>
 
+<script type="text/javascript">
 
+function valid() {
+	alert("hello");
+}
+</script>
 
 <style type="text/css">
 body {
@@ -58,7 +63,7 @@ body {
 		</div>
 	</c:if>
 	
-		<form class="form-signin" role="form" action="<c:url value='j_spring_security_check' />" method='POST'>
+		<form class="form-signin" role="form" action="<c:url value='j_spring_security_check' />" method='POST' onsubmit="return valid();">
 			<h2 class="form-signin-heading"><spring:message code="login.titulo"/></h2>
 			<input type="text" name='j_username' placeholder="<spring:message code="login.usuario"/>" required autofocus> 
 			<input type="password" name='j_password' placeholder="<spring:message code="login.password"/>" required> 
