@@ -197,13 +197,15 @@
 							</goals>
 						</execution>
 					</executions>
-					<configuration>						
-						<packageName>com.pablofiumara.wsdl</packageName>						
+					<configuration>		
 						<wsdl>true</wsdl>						
 						<xmlschema>false</xmlschema>
+						<!-- Aquí se encuentra el archivo .wsdl -->
 						<schemaDirectory>${project.basedir}/src/main/resources/servicios/wsdl</schemaDirectory>
-						<schemaFiles>tiempo.wsdl</schemaFiles>						
-						<outputDirectory>${project.basedir}/src/main/java</outputDirectory>						
+						<schemaFiles>tiempo.wsdl</schemaFiles>	
+						<!-- Aquí se colocan los archivos .java -->					
+						<outputDirectory>${project.basedir}/src/main/java</outputDirectory>
+						<packageName>com.pablofiumara.wsdl</packageName>							
 						<clearOutputDir>false</clearOutputDir>
 					</configuration>
 				</plugin>
