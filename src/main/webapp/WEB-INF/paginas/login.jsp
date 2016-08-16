@@ -59,7 +59,7 @@ body {
 	</c:if>
 	
 		<form class="form-signin" role="form" action="<c:url value='j_spring_security_check' />" method='POST'>
-			<h2 class="form-signin-heading"><spring:message code="login.title"/></h2>
+			<h2 class="form-signin-heading"><spring:message code="login.titulo"/></h2>
 			<input type="text" name='j_username' placeholder="<spring:message code="login.usuario"/>" required autofocus> 
 			<input type="password" name='j_password' placeholder="<spring:message code="login.password"/>" required> 
 			<button type="submit"><spring:message code="login.boton.login"/></button>
