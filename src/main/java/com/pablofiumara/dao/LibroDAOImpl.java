@@ -24,7 +24,7 @@ public class LibroDAOImpl implements LibroDAO {
 	@SuppressWarnings("unchecked")
 	@Transactional
 	public List<Libro> buscarLosLibros() {
-		return sessionFactory.getCurrentSession().createQuery("from Libro").list(); //Libro es el nombre de la clase modelo, no  de la tabla
+		return sessionFactory.getCurrentSession().createQuery("from Libro").list(); //Esto es HQL: Libro es el nombre de la clase modelo, no de la tabla
 	}
 
 	@Transactional
