@@ -9,7 +9,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.pablofiumara.bean.Student;
 
 @Controller
-@RequestMapping("/students")
+@RequestMapping("/pdf")
 public class StudentController {
 
 	@Autowired
@@ -22,7 +22,7 @@ public class StudentController {
 		return "studentPage";
 	}
 	
-	@RequestMapping("/beanToPdfSimple")
+	@RequestMapping("/simple")
 	public ModelAndView beanToPdfSimple() {
 		ModelAndView m = new ModelAndView("simpleStudPdfView");
 		student.setName("Braxton Miller");
@@ -30,7 +30,7 @@ public class StudentController {
 		return m;
 	}
 
-	@RequestMapping("/beanToPdfRich")
+	@RequestMapping("/rich")
 	public ModelAndView beanToPdf() {
 		ModelAndView m = new ModelAndView("richStudPdfView");
 		student.setName("Braxton Miller");
