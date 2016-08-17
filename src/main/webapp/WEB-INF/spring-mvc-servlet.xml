@@ -4,22 +4,31 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans        
         http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
-	<!-- Archivo que indica la carpeta de las vistas y la extensión de dichos
+	<!-- Archivo que indica la carpeta de las vistas y la extensión de dichos 
 		archivos -->
 
-	<bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping" />
-    
-    
+	<bean
+		class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping" />
+
+
 
 
 	<context:component-scan base-package="com.pablofiumara.*" />
-	
-	
+
+
 
 	<context:annotation-config />
 	<mvc:annotation-driven />
 
-	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+	<bean class="org.springframework.web.servlet.view.XmlViewResolver">
+		<property name="order" value="1" />
+		<property name="location">
+			<value>/WEB-INF/spring-pdf-views.xml</value>
+		</property>
+	</bean>
+
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix">
 			<value>/WEB-INF/paginas/</value>
 		</property>
@@ -28,9 +37,11 @@
 		</property>
 	</bean>
 
-	<bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean" />
+	<bean id="validator"
+		class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean" />
 
-	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+	<bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
 		<property name="basename" value="mensajes" />
 	</bean>
 
