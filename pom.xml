@@ -17,6 +17,12 @@
 
 
 	<dependencies>
+		<!-- Dependencias relacionadas con la generación de PDF -->
+		<dependency>
+			<groupId>com.lowagie</groupId>
+			<artifactId>itext</artifactId>
+			<version>2.1.7</version>
+		</dependency>
 		<!-- Dependencias relacionadas con el Login -->
 		<dependency>
 			<groupId>org.springframework.security</groupId>
@@ -197,15 +203,15 @@
 							</goals>
 						</execution>
 					</executions>
-					<configuration>		
-						<wsdl>true</wsdl>						
+					<configuration>
+						<wsdl>true</wsdl>
 						<xmlschema>false</xmlschema>
 						<!-- Aquí se encuentra el archivo .wsdl -->
 						<schemaDirectory>${project.basedir}/src/main/resources/servicios/wsdl</schemaDirectory>
-						<schemaFiles>tiempo.wsdl</schemaFiles>	
-						<!-- Aquí se colocan los archivos .java -->					
+						<schemaFiles>tiempo.wsdl</schemaFiles>
+						<!-- Aquí se colocan los archivos .java -->
 						<outputDirectory>${project.basedir}/src/main/java</outputDirectory>
-						<packageName>com.pablofiumara.wsdl</packageName>							
+						<packageName>com.pablofiumara.wsdl</packageName>
 						<clearOutputDir>false</clearOutputDir>
 					</configuration>
 				</plugin>
