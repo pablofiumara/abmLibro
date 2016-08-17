@@ -31,7 +31,7 @@ public class RevenueReportController extends AbstractController{
 
 		}else if("PDF".equals(output.toUpperCase())){
 		    //return excel view
-		    return new ModelAndView("PdfRevenueSummary","revenueData",revenueData);
+		    return new ModelAndView("RevenueSummary","revenueData",revenueData);
 
 		}else{
 		    //return normal view
