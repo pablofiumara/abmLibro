@@ -21,14 +21,6 @@ public class StudentController {
 		model.addAttribute("stud", student);
 		return "studentPage";
 	}
-	
-	@RequestMapping("/simple")
-	public ModelAndView beanToPdfSimple() {
-		ModelAndView m = new ModelAndView("simpleStudPdfView");
-		student.setName("Braxton Miller");
-		m.getModelMap().addAttribute("stud", student);
-		return m;
-	}
 
 	@RequestMapping("/rich")
 	public ModelAndView beanToPdf() {
