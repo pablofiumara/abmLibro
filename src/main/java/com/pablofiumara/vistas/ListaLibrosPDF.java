@@ -32,7 +32,7 @@ public class ListaLibrosPDF extends AbstractPdfView {
 
 		document.add(table);
 
-		// to open the PDF in 100% zoom
+		
 		writer.setOpenAction(PdfAction.gotoLocalPage(1, new PdfDestination(
 				PdfDestination.XYZ, 0, 10000, 1), writer));
 	}
