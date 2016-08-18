@@ -24,13 +24,13 @@ public class ListaLibrosPDF extends AbstractPdfView {
 			HttpServletResponse response) throws Exception {
 
 		@SuppressWarnings("unchecked")
-		List<Libro> student = (List<Libro>) model.get("listaLibros");
+		List<Libro> listaDeLibros = (List<Libro>) model.get("listaLibros");
 
 		Table table = new Table(2);
 		table.addCell("ID");
 		table.addCell("Título");
 		
-		 for (Libro unLibro : student) {
+		 for (Libro unLibro : listaDeLibros) {
 	            table.addCell(String.valueOf(unLibro.getId())  );
 	            table.addCell(unLibro.getTitulo());
 	        }
