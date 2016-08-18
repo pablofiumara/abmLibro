@@ -6,6 +6,5 @@
         ">
 
 	
-	<bean id="pdfLibros" class="com.pablofiumara.vistas.ListaLibrosPDF">
-	</bean>
+	<bean id="pdfLibros" class="com.pablofiumara.vistas.ListaLibrosPDF"></bean>
 </beans>
