@@ -20,7 +20,7 @@ public class ListaLibrosPDF extends AbstractPdfView {
 
 	@Override
 	protected void buildPdfDocument(Map<String, Object> model,
-			Document document, PdfWriter writer, HttpServletRequest request,
+			Document documento, PdfWriter writer, HttpServletRequest request,
 			HttpServletResponse response) throws Exception {
 
 		@SuppressWarnings("unchecked")
@@ -35,7 +35,7 @@ public class ListaLibrosPDF extends AbstractPdfView {
 	            tabla.addCell(unLibro.getTitulo());
 	        }	
 
-		document.add(tabla);
+		documento.add(tabla);
 		
 		writer.setOpenAction(PdfAction.gotoLocalPage(1, new PdfDestination(
 				PdfDestination.XYZ, 0, 10000, 1), writer));
