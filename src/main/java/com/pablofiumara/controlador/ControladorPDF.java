@@ -7,15 +7,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.pablofiumara.bean.LibroPDF;
+
 import com.pablofiumara.modelo.Libro;
 import com.pablofiumara.servicio.LibroServicio;
 
 @Controller
-public class ControladorPDF {
-
-	@Autowired
-	private LibroPDF student;	
+public class ControladorPDF {		
 	
 	@Autowired
 	private LibroServicio libroServicio;

@@ -13,7 +13,6 @@ import com.lowagie.text.Table;
 import com.lowagie.text.pdf.PdfAction;
 import com.lowagie.text.pdf.PdfDestination;
 import com.lowagie.text.pdf.PdfWriter;
-//import com.pablofiumara.bean.LibroPDF;
 import com.pablofiumara.modelo.Libro;
 
 
