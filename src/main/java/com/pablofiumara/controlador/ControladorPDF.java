@@ -13,7 +13,7 @@ public class ControladorPDF {
 	@Autowired
 	private Student student;	
 
-	@RequestMapping("/pdf-lista-libros.pdf")
+	@RequestMapping("/lista-libros.pdf")
 	public ModelAndView beanToPdf() {
 		ModelAndView m = new ModelAndView("richStudPdfView");
 		student.setName("Braxton Miller");
