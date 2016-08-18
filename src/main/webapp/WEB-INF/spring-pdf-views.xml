@@ -5,8 +5,7 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
         ">
 
-	<bean id="simpleStudPdfView" class="com.pablofiumara.vistas.SimpleStudentPDFView">
-	</bean>
+	
 	<bean id="richStudPdfView" class="com.pablofiumara.vistas.RichStudentPDFView">
 	</bean>
 </beans>
