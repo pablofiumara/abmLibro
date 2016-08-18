@@ -17,7 +17,7 @@ public class ControladorPDF {
 	public ModelAndView listaLibrosAPDF() {
 		ModelAndView m = new ModelAndView("pdfLibros");
 		student.setName("Braxton Miller");
-		m.getModelMap().addAttribute("stud", student);
+		m.getModelMap().addAttribute("listaLibros", student);
 		return m;
 	}
 

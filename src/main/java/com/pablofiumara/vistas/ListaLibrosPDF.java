@@ -21,7 +21,7 @@ public class ListaLibrosPDF extends AbstractPdfView {
 			Document document, PdfWriter writer, HttpServletRequest request,
 			HttpServletResponse response) throws Exception {
 
-		Student student = (Student) model.get("stud");
+		Student student = (Student) model.get("listaLibros");
 
 		Table table = new Table(2);
 		table.addCell("ID");
