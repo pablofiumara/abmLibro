@@ -12,7 +12,7 @@ import com.lowagie.text.Table;
 import com.lowagie.text.pdf.PdfAction;
 import com.lowagie.text.pdf.PdfDestination;
 import com.lowagie.text.pdf.PdfWriter;
-import com.pablofiumara.bean.Student;
+import com.pablofiumara.bean.LibroPDF;
 
 public class ListaLibrosPDF extends AbstractPdfView {
 
@@ -21,7 +21,7 @@ public class ListaLibrosPDF extends AbstractPdfView {
 			Document document, PdfWriter writer, HttpServletRequest request,
 			HttpServletResponse response) throws Exception {
 
-		Student student = (Student) model.get("listaLibros");
+		LibroPDF student = (LibroPDF) model.get("listaLibros");
 
 		Table table = new Table(2);
 		table.addCell("ID");

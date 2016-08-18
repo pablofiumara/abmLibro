@@ -3,7 +3,7 @@ package com.pablofiumara.bean;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Student {
+public class LibroPDF {
 
 	private String firstName;
 	private String lastName;

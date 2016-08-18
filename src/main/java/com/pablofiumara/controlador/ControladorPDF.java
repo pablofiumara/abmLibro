@@ -5,13 +5,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.pablofiumara.bean.Student;
+import com.pablofiumara.bean.LibroPDF;
 
 @Controller
 public class ControladorPDF {
 
 	@Autowired
-	private Student student;	
+	private LibroPDF student;	
 
 	@RequestMapping("/lista-libros.pdf")
 	public ModelAndView listaLibrosAPDF() {
