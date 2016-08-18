@@ -1,5 +1,6 @@
 package com.pablofiumara.vistas;
 
+import java.util.List;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
@@ -12,7 +13,9 @@ import com.lowagie.text.Table;
 import com.lowagie.text.pdf.PdfAction;
 import com.lowagie.text.pdf.PdfDestination;
 import com.lowagie.text.pdf.PdfWriter;
-import com.pablofiumara.bean.LibroPDF;
+//import com.pablofiumara.bean.LibroPDF;
+import com.pablofiumara.modelo.Libro;
+
 
 public class ListaLibrosPDF extends AbstractPdfView {
 
@@ -21,14 +24,18 @@ public class ListaLibrosPDF extends AbstractPdfView {
 			Document document, PdfWriter writer, HttpServletRequest request,
 			HttpServletResponse response) throws Exception {
 
-		LibroPDF student = (LibroPDF) model.get("listaLibros");
+		List<Libro> student = (List<Libro>) model.get("listaLibros");
 
 		Table table = new Table(2);
 		table.addCell("ID");
 		table.addCell("Título");
+		
+		 for (Libro unLibro : student) {
+	            table.addCell(String.valueOf(unLibro.getId())  );
+	            table.addCell(unLibro.getTitulo());
+	        }
 
-		table.addCell(student.getFirstName());
-		table.addCell(student.getLastName());
+		
 
 		document.add(table);
 
