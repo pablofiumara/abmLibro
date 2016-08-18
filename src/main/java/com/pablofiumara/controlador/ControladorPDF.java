@@ -9,7 +9,7 @@ import com.pablofiumara.bean.Student;
 
 @Controller
 @RequestMapping("/pdf")
-public class StudentController {
+public class ControladorPDF {
 
 	@Autowired
 	private Student student;	
