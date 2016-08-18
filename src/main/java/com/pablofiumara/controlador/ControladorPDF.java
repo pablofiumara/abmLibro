@@ -8,13 +8,12 @@ import org.springframework.web.servlet.ModelAndView;
 import com.pablofiumara.bean.Student;
 
 @Controller
-@RequestMapping("/pdf")
 public class ControladorPDF {
 
 	@Autowired
 	private Student student;	
 
-	@RequestMapping("/rich")
+	@RequestMapping("/pdf-lista-libros.pdf")
 	public ModelAndView beanToPdf() {
 		ModelAndView m = new ModelAndView("richStudPdfView");
 		student.setName("Braxton Miller");
