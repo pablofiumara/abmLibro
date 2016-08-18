@@ -8,10 +8,10 @@ import org.springframework.ws.client.core.support.WebServiceGatewaySupport;
 import org.springframework.ws.soap.client.core.SoapActionCallback;
 
 @Repository
-public class TiempoServicio extends WebServiceGatewaySupport{
+public class TiempoServicioImpl extends WebServiceGatewaySupport{
 	
-	public TiempoServicio() {}
-	public TiempoServicio(Jaxb2Marshaller marshaller) {
+	public TiempoServicioImpl() {}
+	public TiempoServicioImpl(Jaxb2Marshaller marshaller) {
 		this.setDefaultUri("http://wsf.cdyne.com/WeatherWS/Weather.asmx");
 		this.setMarshaller(marshaller);
 		this.setUnmarshaller(marshaller);
