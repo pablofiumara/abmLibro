@@ -24,6 +24,7 @@ public class ListaLibrosPDF extends AbstractPdfView {
 			Document document, PdfWriter writer, HttpServletRequest request,
 			HttpServletResponse response) throws Exception {
 
+		@SuppressWarnings("unchecked")
 		List<Libro> student = (List<Libro>) model.get("listaLibros");
 
 		Table table = new Table(2);
