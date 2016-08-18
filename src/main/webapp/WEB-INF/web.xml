@@ -34,7 +34,7 @@
           /WEB-INF/dao-cfg.xml
           /WEB-INF/transaction-cfg.xml
           /WEB-INF/spring-security-config.xml
-          /WEB-INF/spring-pdf-views.xml          
+          /WEB-INF/spring-pdf-vistas.xml          
         </param-value>
    </context-param>
    
