@@ -33,12 +33,9 @@ public class ListaLibrosPDF extends AbstractPdfView {
 		 for (Libro unLibro : listaDeLibros) {
 	            table.addCell(String.valueOf(unLibro.getId())  );
 	            table.addCell(unLibro.getTitulo());
-	        }
-
-		
+	        }	
 
 		document.add(table);
-
 		
 		writer.setOpenAction(PdfAction.gotoLocalPage(1, new PdfDestination(
 				PdfDestination.XYZ, 0, 10000, 1), writer));
