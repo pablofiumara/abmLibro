@@ -15,7 +15,7 @@ public class ControladorPDF {
 
 	@RequestMapping("/lista-libros.pdf")
 	public ModelAndView beanToPdf() {
-		ModelAndView m = new ModelAndView("richStudPdfView");
+		ModelAndView m = new ModelAndView("pdfLibros");
 		student.setName("Braxton Miller");
 		m.getModelMap().addAttribute("stud", student);
 		return m;

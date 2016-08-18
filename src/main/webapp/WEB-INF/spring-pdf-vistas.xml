@@ -6,6 +6,6 @@
         ">
 
 	
-	<bean id="richStudPdfView" class="com.pablofiumara.vistas.ListaLibrosPDF">
+	<bean id="pdfLibros" class="com.pablofiumara.vistas.ListaLibrosPDF">
 	</bean>
 </beans>
