@@ -27,8 +27,8 @@ public class ListaLibrosPDF extends AbstractPdfView {
 		List<Libro> listaDeLibros = (List<Libro>) model.get("listaLibros");
 
 		Table table = new Table(2);
-		table.addCell("ID");
-		table.addCell("Título");
+		table.addCell("ID del libro");
+		table.addCell("Título del libro");
 		
 		 for (Libro unLibro : listaDeLibros) {
 	            table.addCell(String.valueOf(unLibro.getId())  );
