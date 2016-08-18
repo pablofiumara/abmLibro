@@ -14,7 +14,7 @@ import com.lowagie.text.pdf.PdfDestination;
 import com.lowagie.text.pdf.PdfWriter;
 import com.pablofiumara.bean.Student;
 
-public class RichStudentPDFView extends AbstractPdfView {
+public class ListaLibrosPDF extends AbstractPdfView {
 
 	@Override
 	protected void buildPdfDocument(Map<String, Object> model,
