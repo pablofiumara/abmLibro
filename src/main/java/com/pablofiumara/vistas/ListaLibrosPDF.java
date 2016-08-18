@@ -26,16 +26,16 @@ public class ListaLibrosPDF extends AbstractPdfView {
 		@SuppressWarnings("unchecked")
 		List<Libro> listaDeLibros = (List<Libro>) model.get("listaLibros");
 
-		Table table = new Table(2);
-		table.addCell("ID del libro");
-		table.addCell("Título del libro");
+		Table tabla = new Table(2);
+		tabla.addCell("ID del libro");
+		tabla.addCell("Título del libro");
 		
 		 for (Libro unLibro : listaDeLibros) {
-	            table.addCell(String.valueOf(unLibro.getId())  );
-	            table.addCell(unLibro.getTitulo());
+	            tabla.addCell(String.valueOf(unLibro.getId())  );
+	            tabla.addCell(unLibro.getTitulo());
 	        }	
 
-		document.add(table);
+		document.add(tabla);
 		
 		writer.setOpenAction(PdfAction.gotoLocalPage(1, new PdfDestination(
 				PdfDestination.XYZ, 0, 10000, 1), writer));
