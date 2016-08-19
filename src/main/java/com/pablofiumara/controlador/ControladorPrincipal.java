@@ -84,7 +84,7 @@ public class ControladorPrincipal {
 	}
 
 	@RequestMapping(value="/modificar/{id}", method=RequestMethod.POST)
-	public ModelAndView modificarPagina(@ModelAttribute Libro libro, @PathVariable Integer id) {
+	public ModelAndView modificarPagina(@ModelAttribute(value = "unLibro") Libro libro, @PathVariable Integer id) {
 
 		ModelAndView modeloYVista = new ModelAndView("libro-modificado");
 
