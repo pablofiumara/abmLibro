@@ -10,6 +10,8 @@
 	</configs>
 	<autoconfigs>
 		<config>src/main/webapp/WEB-INF/transaction-cfg.xml</config>
+		<config>src/main/webapp/WEB-INF/spring-security-config.xml</config>
+		<config>src/main/webapp/WEB-INF/spring-pdf-vistas.xml</config>
 		<config>src/main/webapp/WEB-INF/dao-cfg.xml</config>
 		<config>src/main/webapp/WEB-INF/data-source-hiber-cfg.xml</config>
 	</autoconfigs>
