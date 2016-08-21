@@ -23,7 +23,7 @@ xmlns:context="http://www.springframework.org/schema/context"
       <property name="driverClassName" value="net.sourceforge.jtds.jdbc.Driver" />
       <property name="url" value="jdbc:jtds:sqlserver://DESKTOP-CB644HR:1433/ABMLibros;instance=SQLEXPRESS" />
       <property name="username" value="123" />
-      <property name="password" value="987" />
+      <property name="password" value="456" />
   </bean>
 
   <bean id="miSessionFactory"
