@@ -34,11 +34,14 @@ public class LibroDAOImpl implements LibroDAO {
 	@Transactional
 	public boolean agregarUnLibro(Libro unLibro) {
 		try {
-			sessionFactory.getCurrentSession().save(unLibro);
+	        logger.info("Intentando agregar un libro. Si no aparecen errores en la consola, el libro se ha agregado correctamente");
+	        sessionFactory.getCurrentSession().save(unLibro);
 			return true;
 		} catch (Exception error) {
+			logger.error("No se ha podido agregar un libro");
 			System.out.println(error);
 		}
+		
 		return false;
 	}
 
