@@ -2,16 +2,20 @@ package com.pablofiumara.dao;
 
 import java.util.List;
 
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.pablofiumara.controlador.HelloWorldController;
 import com.pablofiumara.modelo.Libro;
 
 @Repository
 public class LibroDAOImpl implements LibroDAO {
+	
+	static Logger logger = LoggerFactory.getLogger(LibroDAOImpl.class);
 
 	@Autowired
 	private SessionFactory sessionFactory;
